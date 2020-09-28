@@ -1,0 +1,178 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Key features</h3>
+		<div class="page-section">
+			<h4>Create task</h4>
+			<p>To add a new task, click “Create Task”.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-create.png">
+			<p>For more detail, check <a href="#">Task Form Overview (2.4.1)</a></p>
+		</div>
+		<div class="page-section">
+			<h4>Edit Inline</h4>
+			<p>eTask provides a quick and easy way to edit tasks in an “Excel-like” mode.</p>
+			<p>In the Grid View, click on “Edit” button on the tool bar. When the edit mode is activated,
+				the other buttons on the tool bar, Group by, and Filter function will be disabled, “Expanded
+				Bug grid” and “Bug counter” will be hidden (if user has eBug).</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-edit.png">
+			<p>Click on the desired fields to edit.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-edit-1.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-edit-2.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-edit-3.png">
+			<p>Some fields are not allowed to be edited: </p>
+			<ul class="a-list">
+				<li>ID</li>
+				<li>Source</li>
+				<li>Bucket</li>
+				<li>Phase</li>
+				<li>Estimation</li>
+				<li>Modified</li>
+				<li>Created By</li>
+			</ul>
+			<p>Mouse cursor will change to the “Block” sign.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-edit-4.jpg">
+			<p>Changed fields will have the red triangle like this:</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-edit-5.png">
+			<p>When there is any change in the Edit mode, “Save” button will be available. Click on “Save”
+				at the top-right to save changes or click on “Cancel” to undo the changes. </p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-edit-6.png">
+			<p>eTask allows the “Edit” mode in one page at a time, if user switches to the next page while
+				editing, a pop-up window will be shown:</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-edit-7.png">
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-edit-8.png">
+			<ul class="a-list a-list-alpha">
+				<li>Cancel: Turn off the pop-up window.</li>
+				<li>Don’t Save: Do not save changes and go to the next page.</li>
+				<li>Save: Save and go to the next page.</li>
+			</ul>
+		</div>
+		<div class="page-section">
+			<h4>Bulk Edit</h4>
+			<p>In Task View, Bulk edit is a function which supports editing multiple tasks at once. Bulk
+				edit allows user to edit the following fields:</p>
+			<ul class="a-list">
+				<li>Assigned To</li>
+				<li>Status</li>
+				<li>Priority</li>
+				<li>Start Date</li>
+				<li>Due Date</li>
+			</ul>
+			<p>By default, “Bulk Edit” button will be disabled. User can tick on any box of desired items to
+				enable the “Bulk Edit” button.</p>
+			<p class="color-red">Note: The selected items will be deselected when users change page or uses
+				the function Filter/Group By.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-bulkedit.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-bulkedit-1.png">
+			<p>Click on “Bulk Edit” to open edit form. Input the values and click “Save Changes” to apply to
+				all selected items. Click “Cancel” to return to grid.</p>
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-task-bulkedit-2.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-bulkedit-3.png">
+			<p>Notification Messages</p>
+			<p>There are 3 types of message:</p>
+			<ul class="a-list">
+				<li>Successfully
+					<ul class="a-list">
+						<li>Pop-up a message and then 4 seconds later, it fades out.</li>
+					</ul>
+				</li>
+				<li>1 success and 1 failure
+					<ul class="a-list">
+						<li>Pop-up a message, list out the ID of error items and success items, have a
+							button “Got it” to confirm user have read the message.</li>
+					</ul>
+				</li>
+				<li>All failed.
+					<ul class="a-list">
+						<li>Pop-up a message, list out the ID of all error items, have a button “Got it” to
+							confirm user have read the message.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="page-section">
+			<h4>Export</h4>
+			<p>TBD</p>
+		</div>
+		<div class="page-section">
+			<h4>Refresh</h4>
+			<p>User can click <img src="img/HelpPage/etask-view-task-refresh.png"> to get the
+				newest update of the view.</p>
+		</div>
+		<div class="page-section">
+			<h4>Sort</h4>
+			<p>Click on the column header to sort based on that column. If user clicks on the same column
+				header, it will sort the column in the opposite order.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-sort.png">
+		</div>
+		<div class="page-section">
+			<h4>Paging</h4>
+			<p>Click on the page number or the arrows at the bottom right of the tab to navigate through the
+				pages.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-paging.png">
+		</div>
+		<div class="page-section">
+			<h4>Show/Hide columns</h4>
+			<p>Click on the “eye” icon to show a list of all the columns user can show/hide. It’s only possible to show
+				more columns if there’s enough space in the eTask window. Any excess columns will be hidden.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-showhide.png">
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-task-showhide-1.png">
+		</div>
+		<div class="page-section">
+			<h4>Simple search</h4>
+			<p>Enter text into the Search box to perform a quick search on all columns that are searchable (version 1.0
+				only supports the Title column). </p>
+			<p class="color-red">Note: Search is only available in Task View and Board View, but not Chart View.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-search.png">
+		</div>
+		<div class="page-section">
+			<h4>Advanced search</h4>
+			<p>TBD</p>
+		</div>
+		<div class="page-section">
+			<h4>Filter</h4>
+			<p>Click Filter <img src="img/HelpPage/etask-icon-filter.png"> to show filter options</p>
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-task-filter.png">
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-task-filter-1.png">
+			<p>After setting the filters as desired, click "Apply" to apply the filters to the Task list. Note that
+				filters only persist during the active session.</p>
+			<h6>Date</h6>
+			<p>Select Start Date or Due Date in “Search by”, then enter the date range. To clear the date range, click
+				"Clear Date".</p>
+			<h6>Priority</h6>
+			<p>Select Priority values to filter.</p>
+			<h6>Status</h6>
+			<p>Select Status values to filter.</p>
+			<h6>Assigned To</h6>
+			<p>Type user name or email to find a user. For accounts from other sources that have been mapped, O365
+				account will appear for filtering. It’s possible to assign to multiple users.</p>
+			<h6>Source</h6>
+			<p>Only the data sources that have been configured for this Channel are available for filter.</p>
+			<h6>Reset to Default Filters</h6>
+			<p>Click "Reset to default filter" to reset to the filter settings configured when the view was created.</p>
+		</div>
+		<div class="page-section">
+			<h4>Group by</h4>
+			<p>Click on the … and select "Group By", then choose a desired column.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-groupby.png">
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-task-groupby-1.png">
+			<p class="color-red">Note: If there are more than one page, each "group by" value might not show all tasks
+				for that value in one page. Tasks are split across pages so that users can see different groups by items
+				in a page, instead of having to navigate through many pages to find the next "group by".</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-task-groupby-2.png">
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

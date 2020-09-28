@@ -1,0 +1,41 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Key Features</h3>
+		<div class="page-section">
+			<h4>Chart Drill Down</h4>
+			<p>Chart Drill Down is a function within Team Progress, it provides a grid/list of tasks based on chosen
+				status on Charts.</p>
+			<p>From Team Progress, wherever there is a chart, Chart Drill Down is clickable. Click on any part of a
+				Chart to show the list of tasks that has the chosen status. In the example below: Choose Status = “Not
+				Started”</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-progress-chart.png">
+			<p>A list of tasks with Status = “Not Started” is shown like below:</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-progress-chart-1.png">
+			<p>Click on column headers to sort.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-progress-chart-2.png">
+		</div>
+		<div class="page-section">
+			<h4>Search</h4>
+			<p>This function behaves similar to the Basic Search function in Grid View.</p>
+		</div>
+		<div class="page-section">
+			<h4>Filter</h4>
+			<p>This function behaves similar to the Filter function in Grid View.</p>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

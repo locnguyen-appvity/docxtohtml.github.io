@@ -1,0 +1,26 @@
+.slider {
+    height: 400px !important;
+
+    &.small,
+    &.small {
+        .slides {
+            height: 300px !important;
+        }
+    }
+
+    .indicators {
+        position: inherit;
+        margin-top: -36px;
+        z-index: 2;
+
+        .indicator-item {
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0px 2px 5px #444444;
+
+            &.active {
+                background: #f2ad13;
+                box-shadow: 0px 2px 5px #444444;
+            }
+        }
+    }
+}

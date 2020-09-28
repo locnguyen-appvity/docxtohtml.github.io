@@ -1,0 +1,102 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Customization</h3>
+		<div class="page-section">
+			<h4>OverView</h4>
+			<p>When users first access the eTask tab, the default view is Team Tasks. The default columns are:</p>
+			<ul class="a-list">
+				<li>ID</li>
+				<li>Title</li>
+				<li>Assigned To</li>
+				<li>Due Date</li>
+				<li>Status</li>
+				<li>Source</li>
+			</ul>
+			<p>Note that if the eTask window doesn’t have enough space to display all columns (such as on a mobile phone
+				screen), some columns will not show. The column priority order is set by the system.</p>
+		</div>
+		<div class="page-section">
+			<h4>Create</h4>
+			<p>Apart from the Default views, users can create their own views:</p>
+			<ul class="a-list">
+				<li>Open Left Navigation.</li>
+				<li>
+					<p>Click on the <img class="a-icon" src="img/HelpPage/etask-icon-create.png"> sign, then select the
+						desired view.</p>
+					<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-create.png">
+					<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-create-1.png">
+				</li>
+				<li>
+					<p>In the Settings page, enter the view name, and set the rest of the view’s settings. Note that
+						Display Columns supports drag and drop for ordering easily.</p>
+					<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-create-2.png">
+				</li>
+				<li>Configure filter setting as needed.</li>
+				<li>Click “Create” to save the view.</li>
+			</ul>
+		</div>
+		<div class="page-section">
+			<h4>Edit</h4>
+			<p>To edit an existing view, select the view in the display:</p>
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-edit.png">
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-edit-1.png">
+			<img class="a-screenshot-portrait" src="img/HelpPage/etask-view-edit-2.png">
+			<p>Then click on the Setting (wheel icon) to open settings. Click "Save" to save the settings when done.</p>
+		</div>
+		<div class="page-section">
+			<h4>Set as default</h4>
+			<p>To set a private view to default Task View or Board View, select “Set as default”:</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-setdefault.png">
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-setdefault-1.png">
+
+		</div>
+		<div class="page-section">
+			<h4>Share/Unshare</h4>
+			<p>When user creates a view, it’s saved for their personal use. You can share a view so other members of the
+				team can use the view.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-sharerecall.png">
+			<p>Otherwise, user can make it private again by clicking on “Recall”.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-sharerecall-1.png">
+			<p>[] Update pic for recall</p>
+		</div>
+		<div class="page-section">
+			<h4>Clone</h4>
+			<p>Users can clone an existing view to create a new view based on the settings of that view</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-clone.png">
+			<ul class="a-list">
+				<li>
+					<p>A confirmation message appears</p>
+					<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-clone-1.png">
+				</li>
+			</ul>
+		</div>
+		<div class="page-section">
+			<h4>Delete</h4>
+			<p>To delete a View, select “Delete”.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-delete.png">
+		</div>
+		<div class="page-section">
+			<h4>Hide/Show</h4>
+			<p>To hide a view, select “Hide”.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-hide.png">
+			<p>User can access the hidden views. To see them appear on Private Task View again, user can also select
+				“Show”.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-show.png">
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

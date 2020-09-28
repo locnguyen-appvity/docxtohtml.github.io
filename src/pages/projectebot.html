@@ -1,0 +1,23 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Project</h3>
+		<div class="page-section">
+			<p>TBD</p>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

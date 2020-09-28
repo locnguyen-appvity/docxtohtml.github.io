@@ -1,0 +1,160 @@
+{% extends "blog-layout.html" %}
+
+{% block headTitle %}
+<title>Blogs 2018</title>
+{% endblock %}
+
+{% block blogContent %}
+<!-- Start Body -->
+
+<div class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-3columns appvity-blogsite">
+	<div id="side-nav-blog-category">
+		<div class="a-blogcategories">
+			<h5>Categories</h5>
+			<div class="d-flex flex-md-row flex-column flex-wrap">
+				<div class="card"
+					style="background-image:url(http://www.mediafire.com/convkey/d342/3e4hgfahw7utcybzg.jpg);"
+					onclick="window.location='blog-category.html'">
+					<div class="card-body">
+						<p class="card-title">SharePoint</p>
+					</div>
+				</div>
+				<div class="card"
+					style="background-image:url(http://www.mediafire.com/convkey/95a3/yid60mzkbi7ch7azg.jpg);"
+					onclick="window.location='blog-category.html'">
+					<div class="card-body">
+						<p class="card-title">InfoPath</p>
+					</div>
+				</div>
+				<div class="card"
+					style="background-image:url(http://www.mediafire.com/convkey/4211/3aox3tfa32wvic7zg.jpg);"
+					onclick="window.location='blog-category.html'">
+					<div class="card-body">
+						<p class="card-title">Programming</p>
+					</div>
+				</div>
+				<div class="card"
+					style="background-image:url(http://www.mediafire.com/convkey/37f0/j36l4gp9p23ze22zg.jpg);"
+					onclick="window.location='blog-category.html'">
+					<div class="card-body">
+						<p class="card-title">Windows 8</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" data-activates="side-nav-blog-category" class="button-collapse blog-category-button-collapse">
+		<i class="material-icons">view_compact</i>
+	</a>
+	<div class="blogs-wrap">
+		<div class="a-mainblogs">
+			<h4>Latest posts</h4>
+			<div class="d-flex flex-md-row flex-column flex-wrap">
+
+				<div class="card d-flex flex-md-row flex-column justify-content-between align-items-stretch"
+					onclick="window.location='blog-detail.html'">
+					<div class="card-body">
+						<div>SharePoint</div>
+						<div class="a-caption">13:22 | 04/11/2018</div>
+						<h5 class="card-title">How to Programmatically Create an InfoPath Form from an InfoPath XSN
+							Templatet</h5>
+					</div>
+					<div style="background-image:url(http://www.mediafire.com/convkey/d342/3e4hgfahw7utcybzg.jpg);">
+					</div>
+				</div>
+
+				<div class="card d-flex flex-md-row flex-column justify-content-between align-items-stretch"
+					onclick="window.location='blog-detail.html'">
+					<div class="card-body">
+						<div>Windows 8</div>
+						<div class="a-caption">13:22 | 04/11/2018</div>
+						<h5 class="card-title">How to Configure and Publish InfoPath to SharePoint 2013</h5>
+					</div>
+					<div style="background-image:url(http://www.mediafire.com/convkey/95a3/yid60mzkbi7ch7azg.jpg);">
+					</div>
+				</div>
+
+				<div class="card d-flex flex-md-row flex-column justify-content-between align-items-stretch"
+					onclick="window.location='blog-detail.html'">
+					<div class="card-body">
+						<div>InfoPath</div>
+						<div class="a-caption">13:22 | 04/11/2018</div>
+						<h5 class="card-title">5 Step Program to Treat Windows 8 Start-Button Depression Syndrome
+						</h5>
+					</div>
+					<div style="background-image:url(http://www.mediafire.com/convkey/4211/3aox3tfa32wvic7zg.jpg);">
+					</div>
+				</div>
+
+				<div class="card d-flex flex-md-row flex-column justify-content-between align-items-stretch"
+					onclick="window.location='blog-detail.html'">
+					<div class="card-body">
+						<div>SharePoint</div>
+						<div class="a-caption">13:22 | 04/11/2018</div>
+						<h5 class="card-title">Dimensional Research: Android, Users are Biggest Corporate Security
+							Risks</h5>
+					</div>
+					<div style="background-image:url(http://www.mediafire.com/convkey/37f0/j36l4gp9p23ze22zg.jpg);">
+					</div>
+				</div>
+
+				<div class="card d-flex flex-md-row flex-column justify-content-between align-items-stretch"
+					onclick="window.location='blog-detail.html'">
+					<div class="card-body">
+						<div>Programming</div>
+						<div class="a-caption">13:22 | 04/11/2018</div>
+						<h5 class="card-title">Notes: Install SharePoint Server 2013 on Windows 2012 Server error
+						</h5>
+					</div>
+					<div style="background-image:url(http://www.mediafire.com/convkey/95a3/yid60mzkbi7ch7azg.jpg);">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="side-nav-blog-search">
+		<div class="a-miniblogsearch">
+			<h5>Search</h5>
+			<div>
+				<div class="input-field">
+					<input id="keywords" type="text" class="validate">
+					<label for="keywords">Your keywords</label>
+				</div>
+			</div>
+		</div>
+		<div class="a-tagcloud">
+			<h5>Tag cloud</h5>
+			<div>
+				<a href="blog-tag.html">SharePoint</a>
+				<a href="blog-tag.html">Online Collaboration</a>
+				<a href="blog-tag.html">O365</a>
+				<a href="blog-tag.html">Management System</a>
+				<a href="blog-tag.html">Appvity projects</a>
+				<a href="blog-tag.html">Visual Studio</a>
+				<a href="blog-tag.html">Project management portal</a>
+			</div>
+		</div>
+	</div>
+	<a href="#" data-activates="side-nav-blog-search" class="button-collapse blog-search-button-collapse">
+		<i class="material-icons">search</i>
+	</a>
+</div>
+{% endblock %}
+
+{% block scriptInline %}
+<script src="js/blogs.js?rev=1.0.0.0"></script>
+<!-- <script>
+	$('.blog-category-button-collapse').sideNav({
+		menuWidth: 300, // Default is 240
+		edge: 'left', // Choose the horizontal origin
+		closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	});
+
+	$('.blog-search-button-collapse').sideNav({
+		menuWidth: 300, // Default is 240
+		edge: 'right', // Choose the horizontal origin
+		closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	});
+</script> -->
+{% endblock %}

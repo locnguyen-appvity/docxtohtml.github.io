@@ -1,0 +1,34 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<div class="page-section">
+			<h3>Find a task</h3>
+			<p>On the Conversation tab, type “@eTask” and choose eTask, and then click on “Find a Task”.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-ebot-findtask.png">
+			<p>Use a keyword to find a task .</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-ebot-findtask-1.png">
+			<p>Task will be embedded onto Conversation tab.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-ebot-findtask-2.png">
+			<ul class="a-list a-list-alpha">
+				<li>Open Task: Microsoft Teams will be directed to that task in eTask tab.</li>
+				<li>Attached message (Optional): Write a comment or tag someone to improve concentration.</li>
+				<li>Send: Send the whole message onto Conversation tab.</li>
+			</ul>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-ebot-findtask-3.png">
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

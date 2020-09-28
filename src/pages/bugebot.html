@@ -1,0 +1,143 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Bug</h3>
+		<div class="page-section">
+			<p>eBot will interact with eBug when choosing “bugs”.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-Bug.png">
+			<ul class="a-list a-list-alpha">
+				<li>Type in the command for eBot.</li>
+				<li>Bugs will be shown on Conversation tab as shown below:</li>
+			</ul>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-Bug-1.png">
+		</div>
+		<div class="page-section">
+			<h4>View bugs by properties</h4>
+			<ul class="a-list a-list-decimal">
+				<li>
+					<p class="text-bold">View recently added bugs.</p>
+					<p>View the list of recently added bugs.</p>
+					<p>Syntax: @etask˽bugs</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bugs</p>
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-Bug-properties.png">
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-Bug-properties-1.png">
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View bugs by title</p>
+					<p>View the list of bugs which contains desired input.</p>
+					<p>Syntax: @etask˽bugs/name/{title}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bugs/name/Bug1</p>
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-Bug-properties-2.png">
+						<p>Result:</p>
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-Bug-properties-3.png">
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View bugs that being assigned to user</p>
+					<p>View the list of bugs being assigned to me.</p>
+					<p>Syntax: @etask˽bugs/my</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bugs/my</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View bugs by priority</p>
+					<p>View the list of bugs which has bugs priority = {input}</p>
+					<p>Syntax: @eTask˽bugs/priority/{input}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bugs/priority/high</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View bugs have specific status</p>
+					<p>View the list of bugs which has bugs status = {input}</p>
+					<p>Syntax: eTask˽bugs/status/{input}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bugs/status/in-progress.</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View bugs being assigned to someone</p>
+					<p>View the list of bugs which has bugs assignee = accountName.</p>
+					<p>Syntax: eTask˽bugs/assigned/{accountName}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bugs/assigned/datvo@appvity.com</p>
+						<p>List of bugs assigned to Dat Vo.</p>
+					</div>
+				</li>
+			</ul>
+			<p class="color-red">Note: accountName is an O365 account</p>
+		</div>
+		<div class="page-section">
+			<h4>Bugs actions</h4>
+			<ul class="a-list a-list-decimal">
+				<li>
+					<p class="text-bold">Clone a bug</p>
+					<p>Clone a bug which has same properties as bug {id}.</p>
+					<p>Syntax: eTask˽bug/clone/{id}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bug/clone/123</p>
+						<p>New bug will have the same properties as the bug with ID is 123.</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">Synchronize eTask to Outlook</p>
+					<p>Synchronize “My bugs” from eTask to Outlook TODO list.</p>
+					<p>Syntax: eTask˽bug/sync/outlook</p>
+				</li>
+				<li>
+					<p class="text-bold">Update a bug with specific ID</p>
+					<p class="text-bold">Update status:</p>
+					<p>Change status of bug {id} into {input}.</p>
+					<p>Syntax: eTask˽bug/update/{id}/status/{input}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bug/update/123/status/completed</p>
+						<p>Change status of bug 123 into “Completed”.</p>
+					</div>
+					<p class="text-bold">Update assignee:</p>
+					<p>Change assignee of bug {id} to {accountName}.</p>
+					<p>Syntax: eTask˽bug/update/{id}/assigned/{accountName}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask bug/update/123/assigned/tuonglai@appvity.com</p>
+						<p>Change assignee of bug 123 to “Tuong Lai”.</p>
+					</div>
+					<p class="color-red">Note: accountName is an O365 account</p>
+					<p class="text-bold">Update priority:</p>
+					<p>Change priority of bug {id} to {input}.</p>
+					<p>Syntax: eTask˽bug/update/{id}/priority/{input}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask/bug/update/123/priority/high.</p>
+						<p>Change priority of bug 123 to “high”.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

@@ -1,0 +1,373 @@
+{% extends "layout.html" %}
+
+{% block headerMode %}
+<div class="default">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>Product</title>
+{% endblock %}
+
+{% block indexContent %}
+<!-- Start Banner -->
+<div id="app-slider" class="slider">
+	<ul class="slides">
+		<li>
+			<img src="http://www.mediafire.com/convkey/d342/3e4hgfahw7utcybzg.jpg" />
+			<!-- random image -->
+			<div class="caption left-align d-flex align-items-stretch">
+				<!--<div class="a-video">
+		<iframe width="250" height="144" src="https://www.youtube.com/embed/mjMW51EFNVw" frameborder="0" allow="autoplay; encrypted-media"
+		  allowfullscreen></iframe>
+	  </div>
+	  -->
+				<div>
+					<img src="img/svg/eCalendar-bright.svg" />
+					<h3>eCalendar</h3>
+					<h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam.</h5>
+				</div>
+				<div class="input-field modal-trigger" data-target="modal1">
+					<a class="waves-effect waves-light btn">Watch Video</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- End Banner -->
+
+<!-- Start Body -->
+
+<div class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-2columns">
+	<div>
+		<h4>Features</h4>
+		<div class="section-description">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+				et dolore magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fug.</p>
+		</div>
+	</div>
+	<div>
+		<div class="d-flex flex-md-row flex-column align-items-stretch flex-wrap a-screenshots">
+
+			<!-- Tab panes -->
+			<div id="app-collapse-on-phone" class="accordion tab-content col-md-8 col-12 order-md-0 order-1">
+				<div id="menu0" class="tab-pane fade in show active">
+
+					<div class="card-header  p-0" role="tab" id="heading-A">
+						<a data-toggle="collapse" href="#collapse-A" aria-expanded="false" aria-controls="collapse-A"
+							class="collapsed">
+							Cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum.
+						</a>
+					</div>
+					<div id="collapse-A" class="collapse" role="tabpanel" aria-labelledby="heading-A" style=""
+						data-parent="#app-collapse-on-phone">
+						<img src="http://www.mediafire.com/convkey/2514/n2h0joime0tbg9zzg.jpg">
+					</div>
+
+				</div>
+				<div id="menu1" class="tab-pane fade in show">
+
+					<div class="card-header  p-0" role="tab" id="heading-B">
+						<a data-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B"
+							class="collapsed">
+							Cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum.
+						</a>
+					</div>
+					<div id="collapse-B" class="collapse" role="tabpanel" aria-labelledby="heading-B" style=""
+						data-parent="#app-collapse-on-phone">
+						<img src="http://www.mediafire.com/convkey/2514/n2h0joime0tbg9zzg.jpg">
+					</div>
+
+				</div>
+				<div id="menu2" class="tab-pane fade in show">
+
+					<div class="card-header  p-0" role="tab" id="heading-C">
+						<a data-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C"
+							class="collapsed">
+							Cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum.
+						</a>
+					</div>
+					<div id="collapse-C" class="collapse" role="tabpanel" aria-labelledby="heading-C" style=""
+						data-parent="#app-collapse-on-phone">
+						<img src="http://www.mediafire.com/convkey/cc58/2f8yi5fdhj5ytphzg.jpg">
+					</div>
+				</div>
+
+			</div>
+			<!-- Nav pills -->
+			<ul class="nav nav-pills col-md-4 col-12 order-md-1 order-0 d-none d-md-block" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="pill" href="#menu0">Cat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum.</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" href="#menu1">Cat cupidatat non proident, sunt in culpa
+						qui officia deserunt mollit anim id est laborum.</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" href="#menu2">Cat cupidatat non proident, sunt in culpa
+						qui officia deserunt mollit anim id est laborum.</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div
+	class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-2columns a-benefits no-hover">
+	<div class="">
+		<h4>Benefits</h4>
+		<div class="section-description">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+				et dolore magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fug.</p>
+		</div>
+	</div>
+	<div class="darken-2">
+		<div class="d-flex flex-md-row flex-column align-items-stretch flex-wrap flex-4items">
+			<div class="card">
+				<div class="card-body">
+					<img src="img/svg/projects-project.svg" />
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+						the card's content.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<img src="img/svg/projects-Procure.svg" />
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+						the card's content.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<img src="img/svg/projects-Document.svg" />
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+						the card's content.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<img src="img/svg/projects-knowledge.svg" />
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+						the card's content.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<img src="img/svg/projects-O365.svg" />
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+						the card's content.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<img src="img/svg/projects-Business.svg" />
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+						the card's content.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-2columns a-specs">
+	<div>
+		<h4>Specifications</h4>
+		<div class="section-description">
+			<p>We created small and simple apps that take care of your tasks, issues, and alerts within the Office
+				365 and Teams environment.</p>
+		</div>
+	</div>
+	<div class="d-flex flex-md-row flex-column flex-wrap flex-3items">
+		<div class="card" style="background-image:url(img/spec-O365.jpg);">
+			<div class="card-body">
+				<div><img src="img/svg/specs-O365.svg" /></div>
+				<h5 class="card-title">Office 365</h5>
+				<div class="note">Required</div>
+			</div>
+		</div>
+		<div class="card" style="background-image:url(img/spec-MSTeams.jpg);">
+			<div class="card-body">
+				<div><img src="img/svg/specs-teams.svg" /></div>
+				<h5 class="card-title">Microsoft Teams</h5>
+				<div class="note">Required</div>
+			</div>
+		</div>
+		<div class="card optional" style="background-image:url(img/spec-optional.jpg);">
+			<div class="card-body">
+				<div>
+					<img src="img/svg/specs-vsts.svg" />
+					<h6 class="card-title">Visual Studio Online</h6>
+				</div>
+
+				<div>
+					<img src="img/svg/specs-jira.svg" />
+					<h6 class="card-title">Jira</h6>
+				</div>
+
+				<div class="note">Optional</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-2columns a-document">
+	<div>
+		<h4>Documents</h4>
+	</div>
+	<div class="text-center">
+		<div class="d-flex flex-md-row flex-column align-items-stretch flex-wrap flex-6items">
+			<div class="card" onclick="window.location='onlinedocs.html'">
+				<div class="card-body">
+					<img src="img/svg/document-xlsx.svg" />
+					<h6 class="card-title">Design Guidelines</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='onlinedocs.html'">
+				<div class="card-body">
+					<img src="img/svg/document-rar.svg" />
+					<h6 class="card-title">Installation document</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='onlinedocs.html'">
+				<div class="card-body">
+					<img src="img/svg/document-pdf.svg" />
+					<h6 class="card-title">Lorem ipsum iframe hebrew</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='onlinedocs.html'">
+				<div class="card-body">
+					<img class="filemore" src="img/svg/document-etc.svg" />
+				</div>
+			</div>
+			<div class="card special text-left" onclick="window.location='support.html'">
+				<div class="card-body">
+					<h5 class="card-title">Any question?</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore
+						magna aliqua. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div
+	class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-2columns highlight a-actions">
+	<div>
+		<h4>Take Actions</h4>
+	</div>
+	<div>
+		<div class="d-flex flex-md-row flex-column align-items-stretch flex-wrap flex-2items">
+			<div class="card" onclick="window.location='pricing.html'">
+				<div class="card-body">
+					<h5 class="card-title">Purchase</h5>
+					<p>See pricing and purchase the products.</p>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='demo.html'">
+				<div class="card-body">
+					<h5 class="card-title">Try eTask</h5>
+					<p>Take practical experience before making purchase decision.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-2columns a-document">
+	<div class="">
+		<h4>Related products</h4>
+	</div>
+	<div class="text-center">
+		<div class="d-flex flex-md-row flex-column align-items-stretch flex-wrap flex-6items">
+			<div class="card" onclick="window.location='eTask.html'">
+				<div class="card-body">
+					<div><img src="img/svg/eTask-dark.svg" /></div>
+					<h6 class="card-title">eTask</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='eBug.html'">
+				<div class="card-body">
+					<div><img src="img/svg/eBug-dark.svg" /></div>
+					<h6 class="card-title">eBug</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='eStorage.html'">
+				<div class="card-body">
+					<div><img src="img/svg/eStorage-dark.svg" /></div>
+					<h6 class="card-title">eStorage</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='eResources.html'">
+				<div class="card-body">
+					<div><img src="img/svg/eResources-dark.svg" /></div>
+					<h6 class="card-title">eResources</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='eProject.html'">
+				<div class="card-body">
+					<div><img src="img/svg/eProject-dark.svg" /></div>
+					<h6 class="card-title">eProject</h6>
+				</div>
+			</div>
+			<div class="card" onclick="window.location='ePicture.html'">
+				<div class="card-body">
+					<div><img src="img/svg/ePicture-dark.svg" /></div>
+					<h6 class="card-title">ePicture</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Body -->
+<!-- Modal -->
+<div id="modal1" class="modal">
+	<div class="modal-content">
+		<h4>eTask Videos</h4>
+		<div>
+			<div class="a-video">
+				<iframe width="250" height="144" src="https://www.youtube.com/embed/mjMW51EFNVw" frameborder="0"
+					allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div style="width:250px; padding-bottom:24px">How to install Appvity eTask version 9.2</div>
+			</div>
+			<div class="a-video">
+				<iframe width="250" height="144" src="https://www.youtube.com/embed/mjMW51EFNVw" frameborder="0"
+					allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div style="width:250px; padding-bottom:24px">How to config settingsbefore using Appvity eTask
+				</div>
+			</div>
+			<div class="a-video">
+				<iframe width="250" height="144" src="https://www.youtube.com/embed/mjMW51EFNVw" frameborder="0"
+					allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div style="width:250px; padding-bottom:24px">Appvity eTask introduction</div>
+			</div>
+			<div class="a-video">
+				<iframe width="250" height="144" src="https://www.youtube.com/embed/mjMW51EFNVw" frameborder="0"
+					allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div style="width:250px; padding-bottom:24px">How to config settingsbefore using Appvity eTask
+				</div>
+			</div>
+			<div class="a-video">
+				<iframe width="250" height="144" src="https://www.youtube.com/embed/mjMW51EFNVw" frameborder="0"
+					allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div style="width:250px; padding-bottom:24px">Appvity eTask introduction</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Modal-->
+{% endblock %}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% block headTitle %}{% endblock %}
+
+    <!-- Meta SEO -->
+    {% include "meta.html" %}
+
+    <!-- Favicons -->
+    <link rel="stylesheet" href="/css/fonts/fabric.min.css?rev=1.0.0.0">
+    <link rel="shortcut icon" href="img/fav016.png" />
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="css/core.css?rev=1.0.0.0" />
+    <link rel="stylesheet" href="css/styles.css?rev=1.0.0.0" />
+  </head>
+
+  <body class="materialize block-blog-pages block-config block-help-pages dark">
+    <div
+      class="app-container-scroll-help d-flex flex-column justify-content-between"
+    >
+          {% block headerMode %}{% endblock %}
+
+      <div
+        class="d-flex flex-md-row flex-column justify-content-between align-items-stretch flex-3columns appRow appvity-blogsite"
+      >
+        <div id="side-nav-blog-category" class="appLeftNav">
+          {% include "nav-left.html" %}
+        </div>
+        <a
+          href="#"
+          data-activates="side-nav-blog-category"
+          class="button-collapse app-side-nav-blog-category blog-category-button-collapse scrollUp paddingScrollUp"
+          style="top: 50px"
+        >
+          <i class="material-icons">filter_list</i>
+        </a>
+
+        {% block helpContent %}{% endblock %}
+
+        <div id="side-nav-blog-search" class="app-blog-toc">
+          {% include "nav-right.html" %}
+        </div>
+        <a
+          href="#"
+          data-activates="side-nav-blog-search"
+          class="button-collapse app-side-nav-blog-search blog-search-button-collapse scrollUp paddingScrollUp"
+          style="top: 50px"
+        >
+          <i class="material-icons">apps</i>
+        </a>
+      </div>
+
+      {% include "footer.html" %}
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/core.js?rev=1.0.0.0"></script>
+    {% block scriptInline %}{% endblock %}
+    <script src="js/app.js?rev=1.0.0.0"></script>
+    <script src="js/helppage.js?rev=1.0.0.0"></script>
+  </body>
+</html>

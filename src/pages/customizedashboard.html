@@ -1,0 +1,112 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Customize dashboard</h3>
+		<p>Once the dashboard is created, user can Filter <img class="a-icon"
+				src="img/HelpPage/etask-icon-dashboard-filter.png">, change the Setting <img class="a-icon"
+				src="img/HelpPage/etask-icon-dashboard-setting.png">, or go to Edit mode <img class="a-icon"
+				src="img/HelpPage/etask-icon-dashboard-edit.png">to add/remove the content.</p>
+		<div class="page-section">
+			<h4>Filter</h4>
+			<div class="a-workspacetwoside d-flex flex-row">
+				<div class="a-workspacetwoside-content">
+					<p class="text-bold">Choose Projects: </p>
+					<p>List out all active projects, select the check-boxes inside dropdown to pick which
+						project user want to take into account.</p>
+					<p class="text-bold">Standardize Color Mapping By: </p>
+					<p>Choose a primary project to get color mapping of that project.</p>
+					<p class="color-red">Note: If user unselect the primary project, <span class="text-bold">Standardize
+							Color Mapping By</span> will automatically pick
+						the first project in the remain selected list in <span class="text-bold">Choose
+							Projects.</span></p>
+					<p class="text-bold">Date: </p>
+					<ul class="a-list">
+						<li><span class="text-bold">Filtered By: </span>User can pick Start Date or Due Date
+						</li>
+						<li><span class="text-bold">Time Frame: </span>The amount of time that will be take
+							into account</li>
+					</ul>
+					<div class="color-red">Note:
+						<ul class="a-list">
+							<li>
+								<p>By default,</p>
+								<p><span class="text-bold">Filter By </span>value = Start Date</p>
+								<p><span class="text-bold">Time Frame </span>value = “Recent Months”</p>
+								<p>Recent Month includes “Last Month / Current Month / Next Month”</p>
+							</li>
+							<li>
+								<p><span class="text-bold">Filter By </span>would take the number of task
+									that has Start Date/Due Date during that <span class="text-bold">Time
+										Frame</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="a-workspacetwoside d-flex flex-row">
+						<div class="a-workspacetwoside-content">
+							<p class="text-bold">Priority, Status, Assigned To:</p>
+							<p>This works similar to eTask grid view</p>
+							<p>Click <span class="text-bold">Apply</span> to keep the changes or <span
+									class="text-bold">Cancel</span> to revert the change</p>
+						</div>
+						<div class="a-imagerightside a-image-portrait">
+							<img class="a-screenshot-landscape-small"
+								src="img/HelpPage/etask-personal-dashboard-filter-1.png">
+						</div>
+					</div>
+				</div>
+				<div class="a-imagerightside a-image-portrait">
+					<img class="a-screenshot-portrait" src="img/HelpPage/etask-personal-dashboard-filter.png">
+				</div>
+			</div>
+		</div>
+		<div class="page-section">
+			<h4>Settings</h4>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-personal-dashboard-settings.png">
+			<p><span class="text-bold">Title: </span>Enter the display name of your dashboard for the list
+				here</p>
+			<p><span class="text-bold">Layout: </span>There are 4 columns in the Dashboard. User can choose
+				to have them combined into 1 big main column or split into 2 parts. These are the options
+			</p>
+			<p class="text-bold">Chart Configuration</p>
+			<p>User can toggle to show or hide chart elements (legend, series label, tooltips) and pick
+				where they should be.</p>
+			<p>Click <span class="text-bold">Save </span>to keep the changes or <span class="text-bold">Cancel </span>to
+				revert the change</p>
+			<div class="color-red">
+				<p>Note: </p>
+				<p>If user choose a new layout and click <span class="text-bold">Save</span>, a popup will
+					show up warning the user:</p>
+				<p>“Changing the layout will delete your current section and widgets.</p>
+				<p>Do user want to save your changes?”</p>
+				<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-personal-dashboard-settings-1.png">
+				<ul class="a-list a-list-decimal">
+					<li>Cancel: Turn off the pop-up window. </li>
+					<li>Don’t Save: Do not save changes and keep the widgets</li>
+					<li>Save: Save and delete the widgets</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-section">
+			<h4>Edit</h4>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-personal-dashboard-edit.png">
+			<p>User can add, edit, delete Section and Widget in this mode. </p>
+			<p>Once the edit has been made, user can click <img class="a-icon"
+					src="img/HelpPage/etask-icon-dashboard-success.png"> to save the change or <img class="a-icon"
+					src="img/HelpPage/etask-icon-dashboard-revert.png">to revert it back.</p>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

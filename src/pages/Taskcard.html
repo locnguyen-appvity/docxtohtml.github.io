@@ -1,0 +1,68 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Task card</h3>
+		<div class="page-section">
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-kanban-card.png">
+			<ul class="a-list a-list-alpha">
+				<li>Task title: click to open task form view</li>
+				<li>Assigned to (Note: only Microsoft Planner tasks can have multiple assignees on Board
+					View)</li>
+				<li>Due Date
+					<ul class="a-list">
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-duedate-overdue.png"> Overdue
+						</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-duesoon.png"> Task due Today or
+							within the next 5 days</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-notdue.png"> Task due in more
+							than 5 days from Today</li>
+						<li>Blank: No Due Date</li>
+					</ul>
+				</li>
+				<li>Status
+					<ul class="a-list">
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-status-notstarted.png"> Not
+							Started</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-status-inprogress.png"> In
+							Progress</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-status-hold.png"> Hold
+						</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-status-completed.png">
+							Completed</li>
+					</ul>
+				</li>
+				<li>Priority
+					<ul class="a-list">
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-priority-low.png">Low</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-priority-normal.png">Normal</li>
+						<li><img class="a-icon" src="img/HelpPage/etask-icon-priority-high.png">High</li>
+					</ul>
+				</li>
+				<li>Task Action Menu
+					<ul class="a-list">
+						<li>Edit</li>
+						<li>Clone</li>
+						<li>Get link</li>
+						<li>Delete</li>
+					</ul>
+				</li>
+				<li>Has Attachment</li>
+				<li>Source</li>
+			</ul>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

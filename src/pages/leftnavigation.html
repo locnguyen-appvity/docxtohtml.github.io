@@ -1,0 +1,62 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>1. Left Navigation</h3>
+		<p>Click the hamburger <img class="a-icon" src="img/HelpPage/etask-icon-hamburger.png"> at the top left to open
+			Left Navigation.
+		</p>
+			<p>
+				<img class="a-screenshot-portrait" src="/img/User Guide New/leftnavigation2.png" width="300px" height="200px" alt="Left Navigation Image" />
+				<img class="a-screenshot-portrait" src="/img/User Guide New/leftnavigation3.png" width="700px" height="400px" alt="Left Navigation image" />
+			</p>
+		<div class="page-section">
+			<h4>1.1 Default Views</h4>
+			<p>There are five default views in eTask:</p>
+			<ul class="a-list">
+				<li>Team Tasks (Task View): Tasks are displayed in a table list format.</li>
+				<li>Team Board (Board View): Tasks are displayed as cards in a multi column board, which supports drag and drop for
+					quick action.</li>
+				<li>Team Progress (Chart view): Tasks are represented in charts.</li>
+				<li>Team Calendar: Tasks are represented in a calendar.</li>
+				<li>Team Gantt: Tasks are represented in the Gantt chart.</li>
+			</ul>
+			<p>If user has eBug installed, there will be two additional views: </p>
+			<ul class="a-list">
+				<li>Team Bugs (Bug View): Bugs are displayed in a table list format.</li>
+				<li>Team Bugs Progress: Bugs are represented in charts.</li>
+			</ul>
+		</div>
+		<div class="page-section">
+			<h4>1.2 Public Views</h4>
+			<p>Public Views are which you can share with other members. But first, you need to create a Private View and then you
+				can share it.
+			</p>
+			<p>Public Views also show the shared Views from other members. You can only view it but cannot modify the view of
+				others.
+			</p>
+		</div>
+		<div class="page-section">
+			<h4>1.3 Private Views</h4>
+			<p>Private Views are which you are the only one that can see them. In Private View, you can modify it.
+			</p>
+		</div>
+		<div class="page-section">
+			<h4>1.4 Settings (for advanced user permission only)</h4>
+			<p>Configure user’s eTask preferences. </p>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

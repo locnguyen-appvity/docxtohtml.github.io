@@ -1,0 +1,1288 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3 class="page-section" id="introduction">eTask Introduction</h3>
+
+		<div class="a-caption">Updated by 2019/05/21</div>
+
+		<p>eTask is a cloud based application is designed to solve the following business problems:</p>
+
+		<ul class="a-list">
+			<li>Synchronizing data from various data sources in Jira, Visual Studio Team Service (VSTS), and Office 365
+				Planner in MS Teams.</li>
+			<li>Consolidate tasks from other sources and display tasks in one view.</li>
+			<li>Users can access eTask from any device such as a Smartphone, Tablet, and Personal Computers that has a
+				web browser and internet connection.</li>
+			<li>Automation workflow and message extension.</li>
+			<li>Generating reports in the form of charts.</li>
+			<li>Offering multiple views (Grid view, Chart view, Board view, Calendar view, and Gantt view) for multiple
+				purposes.</li>
+		</ul>
+
+
+		<h3>eTask User Operations Guide</h3>
+
+		<!--Default home screen-->
+
+		<h4 class="page-section" id="2-1-homeScreen">Default Home Screen</h4>
+
+		<p>eTask is a tab application within MS Teams environment. After eTask is installed and deployed, the admin can
+			add eTask as a tab in a channel. Here’s the default screen layout:</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/2.1.png" />
+
+		<!--Left Navigation-->
+
+		<h4 class="page-section" id="2-2-leftNav">Left Navigation</h4>
+
+		<p>Click the hamburger <img class="a-icon" src="img/User Guide/2.21.png" /> at the top left to open Left
+			Navigation.</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.22.1.png" />
+		<img class="a-screenshot-portrait" src="img/User Guide/2.22.2.png" />
+
+		<h6>Default View</h6>
+
+		<p>There are 5 default views in eTask:</p>
+
+		<ul class="a-list">
+			<li>Team Tasks (Task View): Tasks are displayed in a table list format.</li>
+			<li>Teams Board (Board View): Tasks are displayed as cards in a multi column board, which supports drag and
+				drop for quick action.</li>
+			<li>Teams Progress (Chart view): Tasks are represented in charts.</li>
+			<li>Team Calendar: Tasks are represented in Calendar. </li>
+			<li>Team Gantt: Tasks are represented in Gantt. </li>
+		</ul>
+
+		<h6>Public Views</h6>
+
+		<p>Views that user creates and shares with others are listed under Public Views.</p>
+
+		<h6>Private Views</h6>
+
+		<p>Views that user creates for personal use are listed under Private Views.</p>
+
+		<h6>Settings</h6>
+
+		<p>Link to the eTask Settings page for this Channel.</p>
+
+		<!--Views-->
+
+		<h4 class="page-section" id="2-3-views">Views</h4>
+
+		<h5 class="page-section" id="2-3-1-customizeview">Customize view</h5>
+
+		<h6 class="page-section" id="2-3-1-1-overall">Overall</h6>
+
+		<p>When users first access the eTask tab, the default view is Teams Task, which is a Task View. The default
+			columns are:</p>
+
+		<ul class="a-list">
+			<li>ID</li>
+			<li>Title</li>
+			<li>Assigned To</li>
+			<li>Due Date</li>
+			<li>Priority</li>
+			<li>Status</li>
+			<li>Source</li>
+			<li>Bucket</li>
+		</ul>
+
+		<p>Note that if the eTask window doesn’t have enough space to display all columns (such as on a mobile phone
+			screen), some columns will not show. The column priority order is set by the system.</p>
+
+		<h6 class="page-section" id="2-3-1-2-createview">Create view</h6>
+
+		<p>Apart from the Default views, users can create their own views and share with the rest of the team using the
+			following procedure:</p>
+
+		<ul class="a-list">
+
+			<li>Open Left Navigation.</li>
+
+			<li>
+				<p>Click on the <img class="a-icon" src="img/User Guide/2.81.0.png" /> sign next to “Private Board”,
+					then select the desired views.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.81.png" />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.82.png" />
+			</li>
+
+			<li>
+				<p>In the Settings page, enter a view name, and set the rest of the view’s settings. Note that Display
+					Columns supports drag and drop for easy ordering.</p>
+				<img class="a-screenshot-portrait" src="img/User Guide/2.83.png" />
+			</li>
+
+			<li>Configure filter setting as needed.</li>
+
+			<li>Click “Create” to save the view.</li>
+
+		</ul>
+
+		<h6 class="page-section" id="2-3-1-3-editview">Edit view</h6>
+
+		<p>To edit an existing view, select the view in the display:</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.8.11.png" />
+		<img class="a-screenshot-portrait" src="img/User Guide/2.8.12.png" />
+		<img class="a-screenshot-portrait" src="img/User Guide/2.8.13.png" />
+
+		<p>Then click on the Setting (wheel icon) to open settings. Click "Save" to save the settings when done.</p>
+
+		<h6 class="page-section" id="2-3-1-4-setdefault">Set as default</h6>
+
+		<p>To set a private view to default Task View or Board View, select “Set as default”:</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.3.1.png" />
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.3.2.png" />
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.3.3.png" />
+
+		<h6 class="page-section" id="2-3-1-5-shareview">Share view</h6>
+
+		<p>When you create a view, it’s saved for your personal use. You can share a view so other members of the team
+			can use the view.</p>
+
+		<h6 class="page-section" id="2-3-1-6-cloneview">Clone view</h6>
+
+		<p>Users can clone an existing view to create a new view based on the settings of that view.</p>
+
+		<ul class="a-list">
+			<li>
+				<p>Click the view menu from the Left Navigation and select "Clone".</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.8.21.png" />
+			</li>
+			<li>
+				<p>A confirmation message appears</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.8.22.png" />
+			</li>
+		</ul>
+
+		<h6 class="page-section" id="2-3-1-7-deleteview">Delete view</h6>
+
+		<p>To delete a View, select “Delete” on that action menu of the View.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.6.1.png" />
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.6.2.png" />
+
+		<h5 class="page-section" id="2-3-2-taskview">Task view</h5>
+
+		<h6 class="page-section" id="2-3-2-1-showhidecolumns">Show/Hide columns</h6>
+
+		<p>Click on the “eye” icon to show a list of all the columns you can show/hide. It’s only possible to show more
+			columns if there’s enough space in the eTask window. If not, the columns will be disabled.</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.3.1.1.1.png" />
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.3.1.1.2.png" />
+
+		<h6 class="page-section" id="2-3-2-2-paging">Paging</h6>
+
+		<p>The default view shows 50 items. Click on the page number or the arrows at the bottom right of the tab to
+			navigate through the pages.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.4.png" />
+
+		<h6 class="page-section" id="2-3-2-3-sort">Sort</h6>
+
+		<p>Click on the column header to sort based on that column. Each further click will sort the column in the
+			opposite order.</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.3.1.2.png" />
+
+		<h5 class="page-section" id="2-3-3-boardview">Board view</h5>
+
+		<h6 class="page-section" id="2-3-3-1-overall">Overall</h6>
+
+		<p>Board View is designed to show a quick overview of tasks so that the user can make quick actions without the
+			need to go into the details of each task. Tasks are displayed as cards in a multi column board, which
+			supports drag and drop.</p>
+
+		<p>By default, Board View is grouped by Priority.</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/2.4.png" />
+
+		<h6 class="page-section" id="2-3-3-2-taskcard">Task card</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.4.1.png" />
+
+		<ol>
+			<li>Task title: click to open task detail view</li>
+			<li>Assigned to (Note: only Planner tasks can have multiple assignees on Board View)</li>
+			<li>Due Date:
+				<ul class="a-list">
+					<li><img class="a-icon" src="img/User Guide/2.4.1.41.png" /> Overdue tasks</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.42.png" /> Tasks due Today or within the next 5
+						days</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.43.png" /> Tasks due after 5 days from Today</li>
+					<li>Blank: No Due date</li>
+				</ul>
+			</li>
+			<li>Status
+				<ul class="a-list">
+					<li><img class="a-icon" src="img/User Guide/2.4.1.51.png" /> Not Started</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.52.png" /> In Progress</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.54.png" /> Hold</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.53.png" /> Completed</li>
+				</ul>
+			</li>
+			<li>Priority
+				<ul class="a-list">
+					<li><img class="a-icon" src="img/User Guide/2.4.1.61.png" /> Low</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.62.png" /> Normal</li>
+					<li><img class="a-icon" src="img/User Guide/2.4.1.63.png" /> High</li>
+				</ul>
+			</li>
+			<li>Task Action Menu
+				<ul class="a-list">
+					<li>Edit</li>
+					<li>Clone</li>
+					<li>Get link</li>
+					<li>Delete</li>
+				</ul>
+			</li>
+			<li>Has Attachment</li>
+			<li>Source</li>
+		</ol>
+
+		<h6 class="page-section" id="2-3-3-3-boardviewactions">Board view actions</h6>
+
+		<p>You can perform the following actions in the Board View:</p>
+
+		<ol>
+			<li>
+				<p>Group by</p>
+
+				<ul class="a-list">
+					<li>Priority (default)</li>
+					<li>Status</li>
+					<li>Due Date:
+						<ul>
+							<li>Late: Overdue tasks.</li>
+							<li>Today: Tasks due today.</li>
+							<li>Coming Soon: tasks due in the next 3 days.</li>
+							<li>Future: Tasks due after next 7 days.</li>
+							<li>No date: No Due date.</li>
+						</ul>
+					</li>
+					<li>Assigned To: Choose users to group by. Tasks of each user are shown as one bucket. It’s possible
+						to add more users/buckets to the view.</li>
+				</ul>
+			</li>
+			<li>
+				<p>Add a task</p>
+				<p>Click the + button on top of a column to add a task with that group by value.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.4.21.png" />
+			</li>
+			<li>
+				<p>Drag and Drop</p>
+				<p>Drag a task from one bucket to another to change its value (depending on current group by setting).
+					For example, if currently grouped by Priority, dragging a task from the “Low” priority bucket to
+					“High” will in effect change the Priority value of the task from Low to High.</p>
+			</li>
+			<li>
+				<p>Assign task</p>
+				<p>Click the assign icon to assign task.</p>
+			</li>
+			<li>
+				<p>Load more</p>
+				<p>By default, each bucket only shows 10 tasks. Click "Load more" to load more tasks in that bucket.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.4.22.png" />
+			</li>
+			<li>
+				<p>Move bucket</p>
+				<p>Click the bucket menu and select to move left/right.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.4.23.1.png" />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.4.23.2.png" />
+			</li>
+			<li>
+				<p>Show Completed tasks</p>
+				<p>By default, Board View does not show completed tasks (except when grouped by Status). Click "Show
+					Completed" at the bottom of the bucket to show them.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.4.24.png" />
+			</li>
+		</ol>
+
+		<h5 class="page-section" id="2-3-4-reportview">Report view</h5>
+
+		<h6 class="page-section" id="2-3-4-1-leftNav">Overall</h6>
+
+		<p>You can have a summary of your tasks using charts eTask. By default, the Team Progress view doesn’t show any
+			data because a Report View must be configured and created first.</p>
+
+		<h6 class="page-section" id="2-3-4-2-createreportview">Create report view</h6>
+
+		<p>Here are the steps to create a Report View:</p>
+
+		<ol>
+			<li>From the left navigation, click (+) next to Private Views and select Create Report View.
+				<br />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.11.1.png" />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.11.2.png" />
+			</li>
+			<li>Configure the settings
+				<br />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.12.png" />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.13.png" />
+				<ul class="a-list">
+					<li>Title
+						<ul>
+							<li>Name this view: Name of the view.</li>
+						</ul>
+					</li>
+					<li>Chart Information
+						<ul>
+							<li>Title: Name of the chart.</li>
+							<li>X-Axis: Select a column for X-Axis.</li>
+							<li>Types: Select chart type. The following charts are available in the report view:
+								<ul>
+									<li>Line</li>
+									<li>Column</li>
+									<li>Bar</li>
+									<li>Pie</li>
+									<li>Donut</li>
+								</ul>
+							</li>
+							<li>Operators: Operation on the value series. Currently, only Count is supported.</li>
+							<li>Aggregates (if X-Axis is a date column): Choose to aggregate tasks by Month or by Week
+								(refer to 2.5.7 for more details).</li>
+						</ul>
+					</li>
+					<li>Chart Configuration
+						<ul>
+							<li>Allow chart title: Show/hide chart title and select its position (Top, Bottom) if shown.
+							</li>
+							<li>Allow chart legend: Show/hide chart legend and select its position (Top, Bottom, Left,
+								Right) if shown.</li>
+							<li>Allow chart Series label: Show/hide chart series label and select its position.
+								Available positions depend on the type of chart.</li>
+							<li>Allow chart tooltips: Show/hide chart tooltips.</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Configure Filter as needed (refer to section Filters).</li>
+			<li>After all settings have been configured, click "Create" to create the view.
+				<br />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.14.png" />
+			</li>
+			<li>If you want to display this view in the default Team Progress view, set it as default.
+				<br />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.15.1.png" />
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.15.2.png" />
+			</li>
+		</ol>
+
+		<h6 class="page-section" id="2-3-4-3-linechart">Line chart</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.2.png" />
+
+		<p>Available series label positions:</p>
+
+		<ul class="a-list">
+			<li>Center</li>
+			<li>Above</li>
+			<li>Below</li>
+			<li>Left</li>
+			<li>Right</li>
+		</ul>
+
+		<h6 class="page-section" id="2-3-4-4-columnchart">Column chart</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.3.png" />
+
+		<p>Available series label positions:</p>
+
+		<ul class="a-list">
+			<li>Center</li>
+			<li>Inside Base</li>
+			<li>Inside End</li>
+			<li>Outside End</li>
+		</ul>
+
+		<h6 class="page-section" id="2-3-4-5-barchart">Bar chart</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.4.png" />
+
+		<p>Available series label positions:</p>
+
+		<ul class="a-list">
+			<li>Center</li>
+			<li>Inside Base</li>
+			<li>Inside End</li>
+			<li>Outside End</li>
+		</ul>
+
+		<h6 class="page-section" id="2-3-4-6-piechart">Pie chart</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.5.png" />
+
+		<p>Available series label positions:</p>
+
+		<ul class="a-list">
+			<li>Inside End</li>
+			<li>Outside End</li>
+		</ul>
+
+		<h6 class="page-section" id="2-3-4-7-donutchart">Donut chart</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.5.6.png" />
+
+		<p>Available series label positions:</p>
+
+		<ul class="a-list">
+			<li>Inside End</li>
+			<li>Outside End</li>
+		</ul>
+
+		<h6 class="page-section" id="2-3-4-8-dateintegration">Date integration</h6>
+
+		<p>If a date is selected (Start Date or Due Date) for the X-Axis column, the chart will aggregate tasks by Month
+			or by Week.</p>
+
+		<ol>
+			<li>
+				<p>By Month</p>
+				<p>By default, the chart displays tasks in current year. If you want to filter by date, you are only
+					allowed to filter within 12 months (for example: from Mar 01, 2019 to Mar 01, 2020).</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/2.5.7.1.png" />
+			</li>
+			<li>
+				<p>By Week</p>
+				<p>By default, the chart displays tasks in current month.</p>
+			</li>
+		</ol>
+
+		<h6 class="page-section" id="2-3-4-9-colormapping">Color mapping</h6>
+
+		<p>If the Color mappings in Settings have never been configured and saved, the chart will generate random
+			colors. Refer to 5.3.3 for details to configure color mapping.</p>
+
+		<h5 class="page-section" id="2-3-5-teamcalendar">Team calendar</h5>
+
+		<p>Show tasks in calendar view. Only tasks that have a Start Date and Due Date will appear.</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/2.6.0.png" />
+
+		<ol>By default, Month view is shown. Other views include Day, Work Week, Week, and Agenda.
+			<li>Today: Navigate to Today.</li>
+			<li>Prev/Next Arrows: Navigate to the previous/next day.</li>
+			<li>Date Select: Select a date to navigate to.</li>
+		</ol>
+
+		<h5 class="page-section" id="2-3-6-teamgantt">Team Gantt</h5>
+
+		<p>Show tasks in gantt view. Only tasks that have a Start Date or Due Date will appear.</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/2.7.0.png" />
+
+		<h5 class="page-section" id="2-3-7-personalview">Personal view</h5>
+
+		<p>eTask provides a personal view, which is scoped per login user. You can access this personal view by:</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.91.png" />
+
+		<p>The personal view contains several sections, where:</p>
+
+		<ul class="a-list">
+			<li>
+				<p>My Tasks display the tasks that are assigned to you.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/2.92.png" />
+			</li>
+			<li>
+				<p>Check the checkbox at the left of "Title" to complete that task. The status is changed to
+					“Completed”. Unchecking will change the status to “Not Started”.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.5.png" />
+			</li>
+		</ul>
+
+		<!--Customize Task-->
+
+		<h4 class="page-section" id="2-4-customizetask">Customize task</h4>
+
+		<h5 class="page-section" id="2-4-1-addtask">Add task</h5>
+
+		<p>To add a new task, click “Create Task”.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.21.png" />
+
+		<p>The detail task form will be displayed, and the following fields are presented (fields with asterisk <span
+				style="color:red;">*</span> are required):</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/2.3.22.png" />
+
+		<ul class="a-list">
+			<li>Title: Task name up to 250 characters.</li>
+			<li>Source: Only show data sources that have been configured for this Channel. Values include:
+				<ul>
+					<li>eTask</li>
+					<li>VSTS</li>
+					<li>JIRA</li>
+					<li>Planner</li>
+				</ul>
+			</li>
+			<li>Phase: Phase values depend on the Source selected
+				<ul>
+					<li>eTask: No Phase, so this field is disabled.</li>
+					<li>VSTS: Select Iteration from configured VSTS project.</li>
+					<li>JIRA: Select Sprint from configured JIRA project.</li>
+					<li>Planner: Select Plan.</li>
+				</ul>
+			</li>
+			<li>Bucket: Bucket values also depend on the Source selected
+				<ul>
+					<li>eTask: No Bucket.</li>
+					<li>VSTS: Select Area from configured VSTS project.</li>
+					<li>JIRA: No Bucket.</li>
+					<li>Planner: Select Bucket.</li>
+				</ul>
+			</li>
+			<li>Assigned To: Type user name or email to find users to assign this task. Only users from the selected
+				Source are available for select.</li>
+			<li>Start Date: Select Start Date & Time (Today by default).</li>
+			<li>Due Date: Select Due Date & Time.</li>
+			<li>Description: Enter description of the task (plain text if Source is Planner).</li>
+			<li>Priority: Select Priority. Values include: Low, Normal, High.</li>
+			<li>Status: Select Status. Values include: Not Started, In Progress, Completed.</li>
+			<li>% Completed: Enter value for % Completed.</li>
+			<li>Attachment: Click Add Attachment to attach a file.</li>
+		</ul>
+
+		<p>Click "Save" to save the task. Note: The save button is only enabled when all required fields have values.
+		</p>
+
+
+		<h5 class="page-section" id="2-4-2-edittask">Edit task</h5>
+
+		<p>Click on the task title or select "Edit" from the task action menu <img class="a-icon"
+				src="img/User Guide/2.3.31.png" /> to open the detail form and edit.</p>
+
+		<h6>For Task View</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.3.png" />
+
+		<h6>For Board View</h6>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.3.2.png" />
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.3.3.png" />
+
+		<h5 class="page-section" id="2-4-3-assigntask">Assign task</h5>
+
+		<p>Click on the task action menu <img class="a-icon" src="img/User Guide/2.3.31.png" /> and select "Assign".
+			Only users from the source of this task are available for selection.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.4.1.png" />
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.4.2.png" />
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.4.3.png" />
+
+		<h5 class="page-section" id="2-4-4-deletetask">Delete task</h5>
+
+		<p>Click on the task action menu <img class="a-icon" src="img/User Guide/2.3.31.png" /> and select "Delete".</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.5.png" />
+
+		<h5 class="page-section" id="2-4-5-clonetask">Clone task</h5>
+
+		<p>Click on the task action menu <img class="a-icon" src="img/User Guide/2.3.31.png" /> and select Clone. The
+			content of current task will be copied and displayed in the detail form. Saving this form will create a new
+			task.</p>
+
+		<h5 class="page-section" id="2-4-6-getlink">Get link</h5>
+
+		<p>Click on task action menu <img class="a-icon" src="img/User Guide/2.3.31.png" /> and select Get Link. Then
+			press Ctrl C on the keyboard to copy a link to this task.</p>
+
+		<!--View Settings-->
+
+		<h4 class="page-section" id="2-5-viewsettings">View settings</h4>
+
+		<h5 class="page-section" id="2-5-1-taskactionmenu">Task action menu</h5>
+
+		<h6>For Task View</h6>
+
+		<p>Click on the <img class="a-icon" src="img/User Guide/2.3.31.png" /> right next to the task title to open Task
+			Action Menu.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.61.1.png" />
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.61.2.png" />
+
+		<h6>For Board View</h6>
+
+		<p>Click on the <img class="a-icon" src="img/User Guide/2.3.31.png" /> at bottom-right of task card to open Task
+			Action Menu.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.61.3.png" />
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.3.1.61.4.png" />
+
+		<h5 class="page-section" id="2-5-2-groupby">Group by</h5>
+
+		<p>Click on the hamburger menu and select a column under "Group By" to group by that column.</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.3.1.31.1.png" />
+		<img class="a-screenshot-portrait" src="img/User Guide/2.3.1.31.2.png" />
+
+		<p>Note that if there are more than one page, each "group by" value might not show all tasks for that value in
+			one page. Tasks are split across pages so that users can see different groups by items in a page, instead of
+			having to navigate through many pages to find the next "group by" value if the current value has a lot of
+			tasks.</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/2.3.1.32.png" />
+
+		<h5 class="page-section" id="2-5-3-filters">Filters</h5>
+
+		<p>Click Filter <img class="a-icon" src="img/User Guide/2.71.png" /> to show filter options</p>
+
+		<img class="a-screenshot-portrait" src="img/User Guide/2.72.png" />
+		<img class="a-screenshot-portrait" src="img/User Guide/2.73.png" />
+
+		<p>After setting the filters as desired, click "Apply" to apply the filters to the Task list. Note that filters
+			only persist during the active session.</p>
+
+		<h6>Date</h6>
+
+		<p>Select to filter by Start Date or Due Date, then enter the date range. Click "Clear Date" to clear the date
+			range.</p>
+
+		<h6>Priority</h6>
+
+		<p>Select Priority values to filter.</p>
+
+		<h6>Status</h6>
+
+		<p>Select Status values to filter.</p>
+
+		<h6>Assigned To</h6>
+
+		<p>Type user name or email to find user. For accounts from other sources that have been mapped, O365 account
+			will appear for filter. It’s possible to filter by multiple users.</p>
+
+		<h6>Source</h6>
+
+		<p>Only the data sources that have been configured for this Channel are available for filter.</p>
+
+		<h6>Reset to Default Filters</h6>
+
+		<p>Click "Reset to default filter" to reset to the filter settings configured when the view was created.</p>
+
+		<h5 class="page-section" id="2-5-4-simplesearch">Simple search</h5>
+
+		<p>Enter text into the Search box to perform a quick search on all columns that are searchable (version 1.0 only
+			supports the Title column). Note: Search is only available in Task View and Board View, not Chart View.</p>
+
+		<img class="a-screenshot-landscape-small" src="img/User Guide/2.6.png" />
+
+		<h5 class="page-section" id="2-5-5-advancedsearch">Advanced search</h5>
+
+		<p>TBD Release 2.0</p>
+
+		<h5 class="page-section" id="2-5-6-commandbox">Search @ command box</h5>
+
+		<p>TBD Release 2.0</p>
+
+		<!--User Settings & Configurations-->
+
+		<h3>User Settings & Configurations</h3>
+
+		<h4 class="page-section" id="3-1-addEtask">Add eTask App</h4>
+
+		<p>Users can add eTask App into a Team or Channel:</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/3.1.png" />
+
+		<ul class="a-list">
+			<li>Users click on the + tab to add eTask app (1).</li>
+			<li>eTask displays the default view at the tab.</li>
+		</ul>
+
+		<h4 class="page-section" id="3-2-notifications">Notifications</h4>
+
+		<p>For v1, allow the user to upload or edit a TXT or XML file to set the configuration.</p>
+
+		<h4 class="page-section" id="3-3-schemaMapping">Schema Mapping</h4>
+
+		<p>As the system admin, you have the ability to map data used in app from several data sources into eTask.
+			Follow these steps to map external data into the application:</p>
+
+		<h4 class="page-section" id="3-4-workflowSettings">Workflow Settings</h4>
+
+		<p>TBD</p>
+
+		<h4 class="page-section" id="3-5-otherSettings">Other Settings</h4>
+
+		<p>TBD</p>
+
+		<h4 class="page-section" id="3-6-removeEtaskChannel">Remove eTask App from a Channel</h4>
+
+		<p>TBD</p>
+
+		<h4 class="page-section" id="3-7-uninstalleTask">Uninstall eTask App</h4>
+
+		<p>TBD</p>
+
+		<!--Admin Installation & System Settings-->
+
+		<h3>Admin Installation & System Settings</h3>
+
+		<p>This section describes how to install eTask in MS Teams.</p>
+
+		<h4 class="page-section" id="4-1-prepareData">Prepare Data Sources</h4>
+
+		<p>Before installing eTask in MS Teams environment, the following information should be prepared for a smooth
+			installation.</p>
+
+		<div class="divTable" style="width: 100%;">
+
+			<div class="divTableBody">
+
+				<div class="divTableRow">
+					<div class="divTableCell">Items</div>
+					<div class="divTableCell">information</div>
+					<div class="divTableCell">Notes</div>
+				</div>
+
+				<div class="divTableRow">
+					<div class="divTableCell">Use Visual Studio Online:</div>
+					<div class="divTableCell">Host name <br />Token</div>
+					<div class="divTableCell">&nbsp;</div>
+				</div>
+
+				<div class="divTableRow">
+					<div class="divTableCell">Use Jira</div>
+					<div class="divTableCell">Host name<br /> Access account</div>
+					<div class="divTableCell">&nbsp;</div>
+				</div>
+
+				<div class="divTableRow">
+					<div class="divTableCell">Use MS Planner</div>
+					<div class="divTableCell">Host name</div>
+					<div class="divTableCell">&nbsp;</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<h4 class="page-section" id="4-2-addEtaskChannel">Add eTask to a Channel</h4>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Select the Channel and click the + icon to add a new tab.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.21.png" />
+			</li>
+
+			<li>
+				<p>Look for “eTask” in the search box and select eTask.</p>
+				<img class="a-screenshot-portrait" src="img/User Guide/5.22.png" />
+			</li>
+
+			<li>
+				<p>If this is the first time you add eTask to the Channel, or if your eTask session has expired (every
+					hour), you will need to Sign in to your O365 account.</p>
+			</li>
+
+			<li>
+				<p>Click to accept terms of service and Save.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.23.png" />
+			</li>
+
+			<li>
+				<p>Configure and save eTask settings for the first time to finish adding eTask to the Channel</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.24.png" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.25.1.png" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.25.2.png" />
+			</li>
+
+		</ul>
+
+		<h4 class="page-section" id="4-3-etaskSettings">eTask Settings</h4>
+
+		<h5 class="page-section" id="4-3-0-overall">Overall</h5>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.png" />
+
+		<ol>
+			<li>Select the setting in the left panel.</li>
+			<li>Configuration page for each setting.</li>
+			<li>Show Instructions.</li>
+			<li>Click "Save" to save the configuration for the current setting.</li>
+		</ol>
+
+		<h5 class="page-section" id="4-3-1-configuration">Configuration</h5>
+
+		<p>Configuration shows the settings for supported data sources.</p>
+
+		<ol>
+
+			<li>
+
+				<p>Office 365</p>
+
+				<ul class="a-list">
+
+					<li>
+						<p>Select to enable MS Outlook or MS Planner tasks as needed.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.1.png" />
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+
+				<p>Visual Studio</p>
+
+				<ul class="a-list">
+
+					<li>
+						<p>Input Host Name, Token, and click "Load Projects" to load all Visual Studio projects for that
+							token.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.21.png" />
+					</li>
+
+					<li>
+						<p>Select each Project and click "Add" to add that project to eTask.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.22.png" />
+					</li>
+
+					<li>
+						<p>After the project is added, it’s possible to change the Display Name. Click the X icon to
+							remove that project from eTask.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.23.png" />
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+
+				<p>Jira</p>
+
+				<ul class="a-list">
+
+					<li>
+						<p>Input Host Name, User name, and Password, then click "Load Projects" to load all projects of
+							that user in Jira.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.31.png" />
+					</li>
+
+					<li>
+						<p>Select each Project and click "Add" to add that project to eTask.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.32.png" />
+					</li>
+
+					<li>
+						<p>After the project is added, it’s possible to change the Display Name. Click the X icon to
+							remove that project from eTask.</p>
+						<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.1.33.png" />
+					</li>
+
+				</ul>
+
+			</li>
+
+		</ol>
+
+		<h5 class="page-section" id="4-3-2-usermapping">User Mapping</h5>
+
+		<p>Configure User Mapping to map users’ O365 accounts to their accounts in other sources.</p>
+
+		<h6>Mapping</h6>
+
+		<ul class="a-list">
+
+			<li>
+				<p>By default, User Mapping shows the list of all O365 users in the Organization.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.21.png" />
+			</li>
+
+			<li>
+				<p>Type in the search box to find a user, then select the user and their mapping accounts from other
+					sources.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.22.png" />
+			</li>
+
+			<li>
+				<p>The O365 account will be used to represent mapped accounts from other sources. Users can map with
+					accounts from other sources too.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.23.png" />
+			</li>
+
+		</ul>
+
+		<h6>User Mapping List</h6>
+
+		<p>TBD</p>
+
+		<h5 class="page-section" id="4-3-3-colormapping">Color Mapping</h5>
+
+		<p>Configure Color Mapping to update the colors in Chart view.</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.31.png" />
+
+		<p>To change the color for each value, click the color code to open color panel. After selecting the desired
+			color, click "Choose".</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.32.png" />
+
+		<ol>
+
+			<li>
+				<p>Priority</p>
+				<p>Priority values are fixed, including Low, Normal, and High.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.3.11.png" />
+			</li>
+
+			<li>
+				<p>Status</p>
+				<p>Status values are fixed, including Not Started, In Progress, and Completed.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.3.2.png" />
+			</li>
+
+			<li>
+				<p>Source</p>
+				<p>Source values includes all the sources that have been configured and saved. It’s possible to change
+					the display name of the source.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.3.3.png" />
+			</li>
+
+			<li>
+				<p>Date</p>
+				<p>Date values by default include shorthand for 12 months. It’s possible to Add or Remove the values as
+					desired.</p>
+				<img class="a-screenshot-portrait" src="img/User Guide/5.3.3.4.png" />
+			</li>
+
+			<li>
+				<p>User</p>
+				<p>Click "Add" to add a specific user account and assign a color for that user.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.3.5.png" />
+			</li>
+
+			<li>
+				<p>Others</p>
+				<p>Click "Add" to add custom values to assign color.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/5.3.3.6.png" />
+			</li>
+
+		</ol>
+
+		<h5 class="page-section" id="4-3-4-logs">Logs</h5>
+
+		<p>TBD</p>
+
+		<h5 class="page-section" id="4-3-5-others">Others</h5>
+
+		<h6>Alerts</h6>
+
+		<p>The following alerts are available with eTask:</p>
+
+		<div class="divTable" style="width: 100%;">
+			<div class="divTableBody">
+				<div class="divTableRow">
+					<div class="divTableCell">Items</div>
+					<div class="divTableCell">Alerts</div>
+					<div class="divTableCell">Who</div>
+					<div class="divTableCell">Frequency</div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">&nbsp;</div>
+					<div class="divTableCell">Overdue notification</div>
+					<div class="divTableCell">All</div>
+					<div class="divTableCell">Everyday</div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">&nbsp;</div>
+					<div class="divTableCell">About due notification</div>
+					<div class="divTableCell">All</div>
+					<div class="divTableCell">1 day before Due date</div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">&nbsp;</div>
+					<div class="divTableCell">Status Changed</div>
+					<div class="divTableCell">All, PMs, Assigned To</div>
+					<div class="divTableCell">Once</div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">&nbsp;</div>
+					<div class="divTableCell">Priority Changed</div>
+					<div class="divTableCell">All, PMs, Assigned To</div>
+					<div class="divTableCell">Once</div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">&nbsp;</div>
+					<div class="divTableCell">Assigned To Changed</div>
+					<div class="divTableCell"></div>
+					<div class="divTableCell">Once</div>
+				</div>
+			</div>
+		</div>
+
+		<h5 class="page-section" id="4-3-6-extensions">Extensions</h5>
+
+		<p>TBD</p>
+
+		<h5 class="page-section" id="4-3-7-about">About</h5>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.4.png" />
+
+		<h5 class="page-section" id="4-3-8-instructions">Instructions</h5>
+
+		<p>Instructions can be expanded/collapsed in Configuration, User Mapping, and Color Mapping. It does not appear
+			in the About setting.</p>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/5.3.5.png" />
+
+		<!--References-->
+
+		<h3>References</h3>
+
+		<h4 class="page-section" id="6-1-grantPermission">How to grant eTask Permission and Create Access Account for MS
+			Teams</h4>
+
+		<p>eTask requires permissions to access your company resources in Teams, which specify <a
+				href="https://docs.microsoft.com/en-us/azure/active-directory/develop/developer-glossary">role-based</a>
+			access using the client application's credentials/identity, and are presented to the resource at run-time as
+			<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/developer-glossary">"roles"
+				claims</a> in the client's access token.</p>
+
+		<p>eTask requires your organization admin to consent to the app usage.</p>
+
+		<p>Steps to consent eTask, where it has the effect of granting consent to the application for all users in your
+			organization:</p>
+
+		<ul class="a-list">
+			<li>Navigate to the App Registrations blade as a global administrator, then select the app.</li>
+			<li>Select "Required Permissions", and finally hit the "Grant Permissions" button at the top of the blade.
+			</li>
+			<li><a
+					href="https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent">https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent</a>
+			</li>
+			<li><a
+					href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent</a>
+			</li>
+		</ul>
+
+		<img class="a-screenshot-landscape-large" src="img/User Guide/6.1.png" />
+
+		<h4 class="page-section" id="6-2-createAccountVsts">How to create token for Visual Studio Online</h4>
+
+		<p>To integrate into Visual Studio Online, eTask requires Personal Access Tokens (PATs) to authenticate and
+			get/update tasks. Personal access tokens essentially are alternate passwords that you create in a secure way
+			by using your normal authentication. PATs can have expiration dates, limited scopes, and specific Visual
+			Studio Online organizations.</p>
+
+		<p>Steps to create Personal Access Token for eTask:</p>
+
+		<ul class="a-list">
+
+			<li>Sign in to Visual Studio Online with the account that you want to use as access account.</li>
+
+			<li>
+				<p>Select "Security" under your profile.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.21.png" />
+			</li>
+
+			<li>
+				<p>Click "Add" to add a new personal access token.</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.22.png" />
+			</li>
+
+			<li>
+				<p>Enter description and select expiration time, organization.</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.23.png" />
+			</li>
+
+			<li>
+				<p>For Authorized Scopes, eTask only needs the following permissions:</p>
+				<ul>
+					<li>Identity (read)</li>
+					<li>Project and team (read, write and manage)</li>
+					<li>Security (manage)</li>
+					<li>User profile (read)</li>
+					<li>Work items (full)</li>
+				</ul>
+				</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.24.png" />
+			</li>
+
+			<li>Click Create Token to create the token</li>
+
+			<li>Make sure to copy and save the token for use later, because Visual Studio Team Services doesn’t store
+				it.</li>
+
+		</ul>
+
+		<h4 class="page-section" id="6-3-createAccountJira">How to create access Account for Visual JIRA</h4>
+
+		<p>TBD</p>
+
+		<h4 class="page-section" id="6-4-visualDictionary">Visual Element Dictionary</h4>
+
+		<h5>Form Controls</h5>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Autocomplete</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.11.jpg" />
+			</li>
+
+			<li>
+				<p>Checkbox</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.12.jpg" />
+			</li>
+
+			<li>
+				<p>Datepicker</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.13.jpg" />
+			</li>
+
+			<li>
+				<p>Input</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.14.jpg" />
+			</li>
+
+			<li>
+				<p>Radio button</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.15.jpg" />
+			</li>
+
+			<li>
+				<p>Select</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.16.jpg" />
+			</li>
+
+		</ul>
+
+		<h5>Navigation</h5>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Menu</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.21.jpg" />
+			</li>
+
+			<li>
+				<p>Sidenav</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.22.jpg" />
+			</li>
+
+			<li>
+				<p>Toolbar</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.23.png" />
+			</li>
+
+		</ul>
+
+		<h5>Layout</h5>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Expansion panel</p>
+				<img class="a-screenshot-portrait" src="img/User Guide/6.4.31.png" />
+			</li>
+
+			<li>
+				<p>List</p>
+				<img class="a-screenshot-portrait" src="img/User Guide/6.4.32.jpg" />
+			</li>
+
+			<li>
+				<p>Tabs</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.33.jpg" />
+			</li>
+
+		</ul>
+
+		<h5>Buttons &amp; Indicators</h5>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Button</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.41.jpg" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.42.jpg" />
+				<br />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.43.jpg" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.44.jpg" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.45.jpg" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.46.jpg" />
+			</li>
+
+			<li>
+				<p>Icon</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.47.jpg" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.48.png" />
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.49.png" />
+			</li>
+
+			<li>
+				<p>Progress bar</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.492.jpg" />
+			</li>
+
+		</ul>
+
+		<h5>Popups &amp; Modals</h5>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Dialog</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.51.jpg" />
+			</li>
+
+			<li>
+				<p>Tooltip</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.52.png" />
+			</li>
+
+		</ul>
+
+		<h5>Data Table</h5>
+
+		<ul class="a-list">
+
+			<li>
+				<p>Paginator</p>
+				<img class="a-screenshot-landscape-small" src="img/User Guide/6.4.61.jpg" />
+			</li>
+
+			<li>
+				<p>Sort header</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.62.jpg" />
+			</li>
+
+			<li>
+				<p>Table</p>
+				<img class="a-screenshot-landscape-large" src="img/User Guide/6.4.63.png" />
+			</li>
+
+		</ul>
+
+		<h4 class="page-section" id="6-5-additionalReadings">Additional Readings</h4>
+
+		<p><a href="https://docs.microsoft.com/en-us/MicrosoftTeams/teams-overview">Welcome to Microsoft Teams.</a></p>
+
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

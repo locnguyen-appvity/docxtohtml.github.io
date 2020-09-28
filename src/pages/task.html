@@ -1,0 +1,154 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Task</h3>
+		<div class="page-section">
+			<h4>Task Form Overview</h4>
+			<p>When you Create, or click on a task, the task form will be displayed, and the following
+				fields are presented (fields with asterisk * are required):</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-home.png">
+			<ul class="a-list">
+				<li>Title: Name of the task.</li>
+				<li>Assigned To: Type user name or email to find users to assign this task. Only users from the selected
+					Source are available for selecting.</li>
+				<li>Description: Enter description of the task (plain text if Source is Microsoft Planner).</li>
+				<li>Source: Only show data sources that have been configured for this Channel. Values include:
+					<ul class="a-list">
+						<li>Appvity eTask</li>
+						<li>Azure DevOps – [Project/Area name]</li>
+						<li>JIRA – [Project name]</li>
+						<li>Microsoft Planner – [Plan name]</li>
+					</ul>
+				</li>
+				<li>Phase: Phase values depend on the Source selected
+					<ul class="a-list">
+						<li>eTask: Select Phase</li>
+						<li>Azure DevOps: Select Iteration from configured Azure DevOps project.</li>
+						<li>JIRA: Select Sprint from configured JIRA project.</li>
+						<li>Microsoft Planner: Plan will be auto-assigned.</li>
+					</ul>
+				</li>
+				<li>Story: Story values also depend on the Source selected
+					<ul class="a-list">
+						<li>eTask: Select Story</li>
+						<li>Azure DevOps: Select User Story from configured Azure DevOps project. </li>
+						<li>JIRA: Select Story from configured JIRA project.</li>
+						<li>Microsoft Planner: Select Bucket.</li>
+					</ul>
+				</li>
+				<li>Start Date: Select Start Date & Time.</li>
+				<li>Due Date: Select Due Date & Time.</li>
+				<li>Priority: Select Priority. Default values include: High, Normal, Low.</li>
+				<li>Status: Select Status. Default values include: New, Active, Hold, Completed, Removed.</li>
+				<li>Attachment: Click Add Attachment to attach a file.</li>
+				<li>Related To: Select any Task/Bug related to the current task.</li>
+			</ul>
+			<p>Click "Save" to save the task. </p>
+			<div class="color-red">Note:
+				<ul class="a-list">
+					<li>Source: Only source that is set up in Settings (4.3.2) will appear in the list.</li>
+					<li>Phase & Story: The primary values in Settings (4.3.4.1 or 4.3.4.2) will determine the default
+						values of these fields.</li>
+					<li>Start Date & Due Date: User’s preference in Settings (4.3.4.8.1) will determine if these fields
+						are required. </li>
+					<li>The "Save" button is only enabled when all required fields have values.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-section">
+			<h4>Create</h4>
+			<ul class="a-list">
+				<li>
+					<p>To add a new task, click “Create Task” for Task View.</p>
+					<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-task-create.png">
+				</li>
+				<li>
+					<p>Or “+” for Board View.</p>
+					<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-task-create-1.png">
+				</li>
+			</ul>
+		</div>
+		<div class="page-section">
+			<h4>Edit</h4>
+			<p>Click on the task title or select "Edit" from the task action menu <img class=""
+					src="img/HelpPage/etask-icon-assign.png"> to open the task form and edit.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-edit.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-edit-1.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-edit-2.png">
+		</div>
+		<div class="page-section">
+			<h4>Assign</h4>
+			<p>Click on the task action menu <img class="" src="img/HelpPage/etask-icon-assign.png"> and select
+				"Assign". Only users from the source of this task are available for selection. </p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-assign.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-assign-1.png">
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-task-assign-2.png">
+		</div>
+		<div class="page-section">
+			<h4>Clone</h4>
+			<p>Click on the task action menu <img class="" src="img/HelpPage/etask-icon-assign.png"> and select Clone.
+				The content of current task will be copied and displayed in the task form. Saving this form will create
+				a new task. </p>
+		</div>
+		<div class="page-section">
+			<h4>Get Link</h4>
+			<p>Click on the task action menu <img class="" src="img/HelpPage/etask-icon-assign.png"> and select Get
+				Link. Then click Copy or press Ctrl C on the keyboard to copy a link to this task. </p>
+		</div>
+		<div class="page-section">
+			<h4>Delete</h4>
+			<p>Click on the task action menu <img class="" src="img/HelpPage/etask-icon-assign.png"> and select
+				"Delete".</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-delete.png">
+		</div>
+		<div class="page-section">
+			<h4>Follow</h4>
+			<p>[] TBD</p>
+		</div>
+		<div class="page-section">
+			<h4>Create Bug</h4>
+			<p>If eBug is installed, this feature will appear.</p>
+			<p>User can quickly create a bug related to the selected item.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-task-createbug.png">
+		</div>
+		<div class="page-section">
+			<h4>Related</h4>
+			<p>[] TBD</p>
+		</div>
+		<div class="page-section">
+			<h4>User Popup Card</h4>
+			<p>The user popup card displays detailed information about people and provides one-click access to several
+				ways of communicating with someone. </p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-task-usercard.png">
+			<p>When user hovers the mouse over a user picture, they’ll see:</p>
+			<ul class="a-list a-list-alpha">
+				<li>Profile picture.</li>
+				<li>Contact information.</li>
+				<li>Functions:
+					<ul class="a-list">
+						<li>Status (Online, Busy, Away...).</li>
+						<li>Open chat</li>
+						<li>Recent email(s).</li>
+						<li>Start video call.</li>
+						<li>Start audio</li>
+						<li>Task assigned to the owner of the popup card.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

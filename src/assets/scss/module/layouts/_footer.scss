@@ -1,0 +1,82 @@
+footer {
+    position: relative;
+    bottom: 0;
+    color: white;
+    background-color: rgba($red, 1);
+
+    .flex-6items p,
+    .a-link {
+        color: rgba($white, 0.8);
+        font-size: 13px;
+    }
+
+    .a-link:hover {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: underline;
+    }
+
+    .section-social {
+        .a-social-icon {
+            background-image: url(../img/Social-icon.png);
+            background-repeat: no-repeat;
+        }
+
+        .fb-36 {
+            background-position: 0px 0px;
+            background-size: 153px 36px;
+            width: 36px;
+            height: 36px;
+        }
+
+        .linkedin-36 {
+            background-position: -36px 0px;
+            background-size: 153px 36px;
+            width: 36px;
+            height: 36px;
+        }
+
+        .youtube-36 {
+            background-position: -72px 0px;
+            background-size: 153px 36px;
+            width: 81px;
+            height: 36px;
+        }
+
+        li {
+            margin-right: 16px;
+        }
+    }
+
+    nav {
+        height: 40px;
+        line-height: 40px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .card-body {
+        padding: 0px 0px 0px 32px;
+    }
+
+    .flex-2columns {
+        >div {
+            width: calc(100% / 4 * 3);
+
+            &:first-child {
+                // width: calc(100% / 4);
+                width: 100%;
+                margin-top: 0px;
+                border-bottom: 1px solid white;
+                // padding: 16px 32px 32px;
+                padding: 16px 24px 32px;
+            }
+
+            &:nth-child(2n+1)>div:nth-child(2n) {
+                margin: 40px 0px;
+            }
+        }
+        h4 {
+            padding: 0px 0px !important;
+        }
+    }
+}

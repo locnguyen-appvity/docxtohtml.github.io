@@ -1,0 +1,37 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<div class="page-section">
+			<h3>1. Default Home Screen</h3>
+					<p>eTask is a tab application which is fully integrated into Microsoft Teams environment. After eTask is installed
+						and deployed, the administrator can add eTask as a tab in a channel. Here’s the default screen layout:</p>
+					<p>
+				<img class="a-screenshot-landscape-large" src="/img/User Guide New/defaulthomescreen.png" width="850px" height="500px" alt="Default Home Screen Image"/></p>
+					<p>By default, eTask offers the Grid View which has the following main components:</p>
+				<ul class="a-list">
+					<li>Command Bar: Hamburger button, Search, Filter, Group By.</li>
+					<li>Tool Bar: Create button, Edit Inline, Bulk Edit, Export, and Refresh.</li>
+					<li>List View: Sort-able column headers, Hide/Show column headers, list out items with action menus.</li>
+					<li>Paginator: Count items within a page, Page number. </li>
+				</ul>
+			<h3>2. Related Links (later)</h3>
+					<p>Change default view</p>
+					<p>How to create private view</p>
+					<p>How to share my view</p>
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

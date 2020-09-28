@@ -1,0 +1,135 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Task</h3>
+		<div class="page-section">
+			<h4>View tasks by properties</h4>
+			<ul class="a-list a-list-decimal">
+				<li>
+					<p class="text-bold">View recently added tasks:</p>
+					<p>View the list of recently added tasks.</p>
+					<p>Syntax: @etask˽tasks</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask tasks</p>
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-properties.png">
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-properties-1.png">
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View tasks by title</p>
+					<p>View the list of tasks which contains desired input.</p>
+					<p>Syntax: @etask˽tasks/name/{title}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask tasks/name/Task1</p>
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-properties-2.png">
+						<p>Result</p>
+						<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-AI-Bot-properties-3.png">
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View tasks that being assigned to user</p>
+					<p>View the list of tasks being assigned to me.</p>
+					<p>Syntax: @etask˽tasks/my</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask tasks/my</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View tasks by priority</p>
+					<p>View the list of tasks which has tasks priority = {input}</p>
+					<p>Syntax: @eTask˽tasks/priority/{input}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask tasks/priority/high</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View tasks have specific status</p>
+					<p>View the list of tasks which has tasks status = {input}</p>
+					<p>Syntax: eTask˽tasks/status/{input} </p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask tasks/status/in-progress</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">View tasks being assigned to someone</p>
+					<p>View the list of tasks which has tasks assignee = accountName.</p>
+					<p>Syntax: eTask˽tasks/assigned/{accountName}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask tasks/assigned/datvo@appvity.com</p>
+						<p>List of tasks assigned to Dat Vo.</p>
+					</div>
+				</li>
+			</ul>
+			<p class="text-bold">accountName is an O365 account</p>
+		</div>
+		<div class="page-section">
+			<h4>Tasks actions</h4>
+			<ul class="a-list a-list-decimal">
+				<li>
+					<p class="text-bold">Clone a task</p>
+					<p>Clone a task which has same properties as task {id}.</p>
+					<p>Syntax: eTask˽task/clone/{id}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask task/clone/123</p>
+						<p>New task will have the same properties as the task with ID is 123.</p>
+					</div>
+				</li>
+				<li>
+					<p class="text-bold">Synchronize eTask to Outlook</p>
+					<p>Synchronize “My tasks” from eTask to Outlook TODO list.</p>
+					<p>Syntax: eTask˽task/sync/outlook</p>
+				</li>
+				<li>
+					<p class="text-bold">Update a task with specific ID</p>
+					<p class="text-bold">Update status:</p>
+					<p>Change status of task {id} into {input}.</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask task/update/123/status/completed</p>
+						<p>Change status of task 123 into “Completed”.</p>
+					</div>
+					<p class="text-bold">Update assignee:</p>
+					<p>Change assignee of task {id} to {accountName}.</p>
+					<p>Syntax: eTask˽task/update/{id}/assigned/{accountName}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask task/update/123/assigned/tuonglai@appvity.com</p>
+						<p>Change assignee of task 123 to “Tuong Lai”.</p>
+					</div>
+					<p class="text-bold">accountName is an O365 account</p>
+
+					<p class="text-bold">Update priority:</p>
+					<p>Change priority of task {id} to {input}.</p>
+					<p>Syntax: eTask˽task/update/{id}/priority/{input}</p>
+					<div class="a-helppage-example">
+						<p class="text-bold">Example</p>
+						<p>eTask/task/update/123/priority/high</p>
+						<p>Change priority of task 123 to “high”.</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

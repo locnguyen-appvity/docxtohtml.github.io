@@ -1,0 +1,80 @@
+{% extends "help-layout.html" %}
+
+{% block headerMode %}
+<div class="dark">
+	{% include "header.html" %}
+</div>
+{% endblock %}
+
+{% block headTitle %}
+<title>eTask Help</title>
+{% endblock %}
+
+{% block helpContent %}
+<div class="appRightContent">
+	<div class="a-section">
+		<h3>Key Features</h3>
+		<div class="page-section">
+			<h4>Create task</h4>
+			<p>Click the + button on top of a column to add a task with that group by value. For more detail, check <a
+					href="#"> 2.4.1 Create a Task</a></p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-kanban-create.png">
+		</div>
+		<div class="page-section">
+			<h4>Edit task</h4>
+			<p>User can select any task to see the task form and edit the task (2.4.2). There are alternative ways to
+				quickly edit a field:</p>
+			<p>Assign: Click the assign icon <img class="" src="img/HelpPage/etask-icon-kanban-assign.png"> to assign
+				task.</p>
+			<p>Status: Click on the status icon (<img class="a-icon"
+					src="img/HelpPage/etask-icon-status-notstarted.png"> or <img class="a-icon"
+					src="img/HelpPage/etask-icon-status-inprogress.png"> or <img class="a-icon"
+					src="img/HelpPage/etask-icon-status-hold.png"> or <img class="a-icon"
+					src="img/HelpPage/etask-icon-status-completed.png">) to change the task status</p>
+			<p>Priority: Click on the priority icon (<img class="a-icon"
+					src="img/HelpPage/etask-icon-priority-normal.png"> or <img class="a-icon"
+					src="img/HelpPage/etask-icon-priority-low.png"> or <img class="a-icon"
+					src="img/HelpPage/etask-icon-priority-high.png">) to change the task priority</p>
+		</div>
+		<div class="page-section">
+			<h4>Load more</h4>
+			<p>By default, each bucket only shows 10 tasks. Click "Load more" to load more tasks in that bucket.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-kanban-loadmore.png">
+		</div>
+		<div class="page-section">
+			<h4>Show Completed tasks</h4>
+			<p>By default, Board View does not show completed tasks (except when grouped by Status). Click "Show
+				Completed" at the bottom of the bucket to show them.</p>
+			<img class="a-screenshot-landscape-small" src="img/HelpPage/etask-view-kanban-showcompleted.png">
+		</div>
+		<div class="page-section">
+			<h4>Drag and Drop</h4>
+			<p>Drag a task from one bucket to another to change its value (depending on current group by setting). For
+				example, if currently grouped by Priority, dragging a task from the “Low” priority bucket to “High” will
+				in effect change the Priority value of the task from Low to High.</p>
+		</div>
+		<div class="page-section">
+			<h4>Move bucket</h4>
+			<p>Click the bucket menu and select to move left/right.</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-kanban-movebucket.png">
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-kanban-movebucket-1.png">
+		</div>
+		<div class="page-section">
+			<h4>Search</h4>
+			<p>This function behaves similar to the Basic Search function in Grid View.</p>
+		</div>
+		<div class="page-section">
+			<h4>Filter</h4>
+			<p>This function behaves similar to the Filter function in Grid View.</p>
+		</div>
+		<div class="page-section">
+			<h4>Group by</h4>
+			<p>Similar to Group by in Grid View, except when user pick Assign To,</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-kanban-groupby.png">
+			<p>they can choose which user they want to see</p>
+			<img class="a-screenshot-landscape-large" src="img/HelpPage/etask-view-kanban-groupby-1.png">
+		</div>
+	</div>
+	{% include "help-layout-backup.html" %}
+</div>
+{% endblock %}

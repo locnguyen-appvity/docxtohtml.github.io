@@ -1,0 +1,303 @@
+.block-help-pages {
+    /* common */
+
+    .text-bold {
+        font-weight: bold;
+    }
+
+    .a-imagerightside {
+        margin-left: 15px;
+        display: flex;
+
+        .a-screenshot-portrait {
+            max-width: 100%;
+        }
+    }
+
+    .a-helppage-example {
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .a-icon-90 {
+        width: 90px;
+    }
+
+    /* end common */
+
+    .drag-target {
+        width: 10px !important;
+    }
+
+    .appvity-blogsite {
+        background-color: #f2f2f2;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .app-blog-toc {
+        position: sticky;
+        top: 0.82rem;
+        right: 0;
+        height: 100%;
+        max-height: calc(100vh - 64px);
+        overflow: auto;
+        background-color: transparent !important;
+        padding-top: 30px;
+    }
+
+    .appLeftNav {
+        position: sticky;
+        top: 0;
+        height: 100%;
+        max-height: calc(100vh - 64px);
+        overflow: auto;
+        background-color: transparent !important;
+    }
+
+    .app-container-scroll-help {
+        height: 100%;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    .app-container-scroll-help .appRightContent {
+        padding-left: 32px !important;
+        width: 60%;
+        background-color: white;
+    }
+
+    .a-section .page-section h4:first-child {
+        padding-top: 6%;
+    }
+
+    .page-section,
+    body {
+        overflow: auto;
+    }
+
+    .toc-title {
+        color: #212529;
+        font-size: 24px;
+        padding-left: 32px;
+        margin-bottom: 2rem;
+        margin-top: 0.82rem;
+    }
+
+    #BlogToc li {
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+            padding-left: 32px;
+            color: #212529;
+        }
+
+        &.menu-item-active a {
+            border-left: 8px solid #75211d;
+            background-color: #75211d;
+            color: white;
+            padding-left: 24px;
+        }
+    }
+
+    .button-2sides {
+        display: flex;
+        place-content: stretch space-between;
+        align-items: stretch;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+
+        .button-collapse {
+            color: rgba(116, 6, 14, 1);
+            background-color: #f3f3f3;
+            width: 50%;
+        }
+
+        .blog-category-button-collapse i {
+            padding: 8px 0 8px 24px;
+        }
+
+        .blog-search-button-collapse {
+            text-align: right;
+
+            i {
+                padding: 8px 24px 8px 0;
+            }
+        }
+    }
+
+    /* custom left nav */
+
+    #side-nav-blog-category .collapsible-header {
+        overflow: hidden;
+
+        .material-icons {
+            width: 100%;
+        }
+    }
+
+    /* end custom left nav */
+    @media (max-width: 767.98px) {
+        .app-container-scroll-help .flex-3columns>.appRightContent {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .appLeftNav,
+        .app-blog-toc {
+            background-color: #fff !important;
+            max-height: 100vh;
+        }
+    }
+
+    @media (max-width: 1279px) and (min-width: 768px) {
+        .app-container-scroll-help .flex-3columns>.appRightContent {
+            width: calc(100% - 144px);
+        }
+
+        .appLeftNav,
+        .app-blog-toc {
+            background-color: #fff !important;
+            max-height: 100vh;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .app-container-scroll-help .flex-3columns>.appRightContent {
+            width: 60%;
+        }
+
+        .button-2sides {
+            display: none;
+        }
+    }
+
+    /* XS Portrait (Ex: Iphone 5 Portrait, Iphone 6 Portrait) */
+    @media only screen and (max-width: 479px) {}
+
+    /* XS Landscape (Ex: Iphone 5 Landscape)*/
+    @media only screen and (max-width: 599px) and (min-width: 480px) {}
+
+    /* SM (Ex: Ipad Mini Portrait, Ipad Portrait) */
+    @media only screen and (max-width: 767px) and (min-width: 600px) and (orientation: portrait) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 959px) and (min-width: 768px) and (orientation: portrait) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+
+        /* fix for logo */
+
+        .a-topmenu .side-nav .collapsible-body a {
+            h6 {
+                margin: 0px;
+                padding: 16px;
+            }
+
+            img {
+                width: 32px;
+            }
+
+            display: flex;
+            text-transform: inherit;
+        }
+
+        /* end fix for logo */
+    }
+
+    /* SM (Ex: Iphone 6 Landscape)  */
+    @media only screen and (max-width: 767px) and (min-width: 600px) and (orientation: landscape) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 959px) and (min-width: 768px) and (orientation: landscape) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+
+        /* fix for logo */
+
+        .a-topmenu .side-nav .collapsible-body a {
+            h6 {
+                margin: 0px;
+                padding: 16px;
+            }
+
+            img {
+                width: 32px;
+            }
+
+            display: flex;
+            text-transform: inherit;
+        }
+
+        /* end fix for logo */
+    }
+
+    /* MD (Ex: Ipad Mini Landscape, Ipad Landscape)*/
+    @media only screen and (max-width: 1024px) and (min-width: 960px) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1279px) and (min-width: 1025px) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+    }
+
+    /* LG */
+    @media only screen and (max-width: 1365px) and (min-width: 1280px) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1920px) and (min-width: 1366px) {
+        .appvity-blogsite {
+            flex-direction: row !important;
+
+            .blog-search-button-collapse {
+                position: static !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+<div [ngClass]="{'app-dark': dark}" class="portal-container">
+    <mat-sidenav-container>
+        <mat-sidenav [attr.color]="themeColor" #overSidenav class="sidenav-container over-sidenav"
+            [opened]="openSideNav" mode="side">
+            <mat-toolbar color="primary">
+                <mat-icon *ngIf="openSideNav" svgIcon="logo" class="sidenav-logo" [routerLink]="['/']"></mat-icon>
+                <mat-icon *ngIf="!openSideNav" [class.minimizeNav]="!openSideNav" svgIcon="logoXs" class="sidenav-logo"
+                    [routerLink]="['/']"></mat-icon>
+                <span fxFlex></span>
+                <button mat-button class="btn-primary-sidenav" *ngIf="openSideNav" (click)="eventSideNav(true)">
+                    <mat-icon svgIcon="ic_arrow_left"></mat-icon>
+                </button>
+            </mat-toolbar>
+            <mat-nav-list *ngIf="!openSideNav" [class.minimizeNav]="!openSideNav">
+                <mat-list-item [routerLink]="['/home']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}" matTooltip="Home" matTooltipPosition="after">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_home"></mat-icon>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/tenants']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}" matTooltip="Tenants" matTooltipPosition="after">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_tenants"></mat-icon>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/dashboard']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}" matTooltip="Dashboard" matTooltipPosition="after">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_dashboard"></mat-icon>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/tools']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}" matTooltip="Tools" matTooltipPosition="after">
+                    <mat-icon mat-list-icon class="material-icons icon-faws" svgIcon="ic_tools"></mat-icon>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/help-support']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}" matTooltip="Help and Support" matTooltipPosition="after">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_support"></mat-icon>
+                </mat-list-item>
+            </mat-nav-list>
+            <mat-nav-list *ngIf="openSideNav">
+                <mat-list-item [routerLink]="['/home']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_home"></mat-icon>
+                    <span>Home</span>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/tenants']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_tenants"></mat-icon>
+                    <span>Tenants</span>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/dashboard']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_dashboard"></mat-icon>
+                    <span>Dashboard</span>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/tools']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <mat-icon mat-list-icon class="material-icons icon-faws" svgIcon="ic_tools"></mat-icon>
+                    <span>Tools</span>
+                </mat-list-item>
+                <mat-list-item [routerLink]="['/help-support']" [routerLinkActive]="['active']"
+                    [routerLinkActiveOptions]="{exact: true}">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_support"></mat-icon>
+                    <span>Help and Support</span>
+                </mat-list-item>
+            </mat-nav-list>
+            <mat-nav-list class="sidenav-toggle" [class.minimizeNav]="!openSideNav">
+                <mat-list-item class="btn-primary-sidenav" *ngIf="!openSideNav" (click)="eventSideNav(false)">
+                    <mat-icon mat-list-icon class="material-icons" svgIcon="ic_align_left"></mat-icon>
+                </mat-list-item>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content class="content-container" [class.minimizeNav]="!openSideNav">
+            <mat-toolbar color="primary">
+                <!-- Menu Button -->
+                <button fxHide.gt-xs mat-icon-button (click)="overSidenav.toggle()">
+                    <mat-icon svgIcon="ic_menu"></mat-icon>
+                </button>
+
+                <!-- Page Titles -->
+                <h2 class="mat-h2 title">{{title}}</h2>
+                <span fxFlex></span>
+                <!-- Fullscreen Toggle -->
+                <button mat-icon-button fxHide.lt-sm>
+                    <mat-icon svgIcon="ic_fullscreen" *ngIf="!fullscreen" (click)="onFullscreen()"
+                        matTooltip="Fullscreen"></mat-icon>
+                    <mat-icon svgIcon="ic_fullscreen_exit" *ngIf="fullscreen" (click)="onFullscreenExit()"
+                        matTooltip="Exit Fullscreen"></mat-icon>
+                </button>
+            </mat-toolbar>
+            <!-- <ng-container *ngIf="loadingRouteConfig">
+                <div class="app-loading">
+                    <img src="assets/images/loader.svg" class="spinner">
+                </div>
+            </ng-container> -->
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

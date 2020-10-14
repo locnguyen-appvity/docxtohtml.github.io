@@ -1,0 +1,144 @@
+.portal-container {
+    .sidenav-container {
+        width: 60px;
+        min-width: 60px;
+        border-right: none;
+        visibility: visible !important;
+        transform: none;
+        transition: all 0.3s;
+        overflow-x: hidden;
+
+        .mat-drawer-inner-container {
+            overflow: hidden;
+        }
+
+        .material-icons.icon-faws {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        mat-toolbar {
+            padding: 0 10px;
+        }
+
+        .sidenav-logo {
+            width: 139px;
+            height: 39px;
+            display: block;
+            text-align: left;
+
+            &.minimizeNav {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .btn-primary-sidenav {
+            padding: 0;
+            width: 40px;
+            min-width: 40px;
+
+            .mat-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .mat-nav-list {
+            .mat-list-item {
+                color: $text-primary;
+
+                .mat-list-item-content {
+                    span {
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            &.minimizeNav {
+                .mat-list-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .mat-list-item-content {
+                        padding: 0 14px;
+                    }
+                }
+            }
+        }
+
+        &.mat-drawer-opened {
+            width: 250px;
+            min-width: 250px;
+
+            mat-toolbar {
+                padding: 0 16px;
+            }
+        }
+
+        .sidenav-toggle {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            .btn-primary-sidenav {
+                width: 100%;
+
+                .mat-list-item-content {
+                    width: 60px;
+                    justify-content: center;
+
+                    .mat-icon {
+                        width: 24px;
+                        height: 24px;
+
+                        svg {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+
+            &.minimizeNav {
+                .btn-primary-sidenav {
+                    padding: 0;
+
+                    .mat-list-item-content {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-container {
+        min-height: 100vh;
+        background-color: #f9f9f9;
+        margin-left: 250px !important;
+
+        &.minimizeNav {
+            margin-left: 60px !important;
+        }
+
+        .mat-toolbar.mat-primary {
+            background-color: #fff;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
+            .title {
+                color: #333;
+            }
+
+            .mat-icon {
+                color: #333;
+            }
+        }
+    }
+}

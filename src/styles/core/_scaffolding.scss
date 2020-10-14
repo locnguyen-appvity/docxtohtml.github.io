@@ -1,0 +1,20 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+
+	* {
+		outline: none;
+		font-family: 'Roboto', "Helvetica Neue", sans-serif;
+	}
+}
+
+// Hack for stopping iOS from zooming in on input focus
+.mat-form-field {
+	input {
+		font-size: 16px;
+	}
+}

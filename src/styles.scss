@@ -1,0 +1,9 @@
+// Core App
+@import "styles/core/variables";
+@import "styles/core/material.variables";
+@import "styles/core/material.themes";
+@import "styles/core/scaffolding";
+@import "styles/core/mixins";
+
+// App Module
+@import "styles/global/app.module";

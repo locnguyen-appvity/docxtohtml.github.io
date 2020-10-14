@@ -1,0 +1,40 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$portal-etask-primary: mat-palette($mat-blue-grey, 900, 300, 900);
+$portal-etask-accent: mat-palette($mat-pink, 700, 300, 900);
+$portal-etask-warn: mat-palette($mat-red, 600, 300, 900);
+// Defind Portal eTask Light Theme
+$portal-etask-theme: mat-light-theme($portal-etask-primary, $portal-etask-accent, $portal-etask-warn);
+
+$portal-etask-dark-primary: mat-palette($mat-gray, 700, 300, 900);
+$portal-etask-dark-accent: mat-palette($mat-pink, 700, 300, 900);
+$portal-etask-dark-warn: mat-palette($mat-red, 700, 300, 900);
+// Defind Portal eTask Dark Theme
+$portal-etask-dark-theme: mat-dark-theme($portal-etask-dark-primary, $portal-etask-dark-accent, $portal-etask-dark-warn);
+
+@mixin sidenav-component-theme($theme) {
+	$primary: map-get($theme, primary);
+	$accent: map-get($theme, accent);
+	$warn: map-get($theme, warn);
+	$foreground: map-get($theme, foreground);
+	$background: map-get($theme, background);
+
+	.mat-sidenav {
+		background-color: $second;
+		color: mat-color($foreground, text);
+
+		&[color=primary] {
+			@include _mat-toolbar-color($primary);
+		}
+
+		&[color=accent] {
+			@include _mat-toolbar-color($accent);
+		}
+
+		&[color=warn] {
+			@include _mat-toolbar-color($warn);
+		}
+	}
+}

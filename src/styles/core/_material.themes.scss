@@ -1,0 +1,7 @@
+@include angular-material-theme($portal-etask-theme);
+@include sidenav-component-theme($portal-etask-theme);
+
+.app-dark {
+	@include angular-material-theme($portal-etask-dark-theme);
+	@include sidenav-component-theme($portal-etask-dark-theme);
+}
